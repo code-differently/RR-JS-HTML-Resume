@@ -1,7 +1,5 @@
 # Work Assignment - HTML Resume
 
-**Approx. Time:** 2 days
-
 ## Tech Stack
 A list of expected technology to be used in this assignment
 
