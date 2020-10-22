@@ -1,3 +1,7 @@
+* {
+  background-color: teal;
+}
+
 body {
   display: flex;
   justify-content: center;
