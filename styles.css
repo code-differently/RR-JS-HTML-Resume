@@ -11,6 +11,10 @@ body > div {
   width: 50%;
 }
 
+h1 {
+  text-align: center;
+}
+
 img {
   border-radius: 50%;
   width: 12rem;
