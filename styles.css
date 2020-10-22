@@ -4,9 +4,11 @@ body {
 }
 
 body > div {
-  text-align: center;
+  width: 50%;
 }
 
 img {
   border-radius: 50%;
+  width: 12rem;
+  float: right;
 }
