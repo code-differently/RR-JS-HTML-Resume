@@ -1,23 +1,44 @@
 body {
+  font-family: sans-serif;
+
   background-color: teal;
   display: flex;
   justify-content: center;
 }
 
 #wrapper {
-  padding: 0 20px;
+  padding: 0 20px 20px;
   width: 50%;
   background-color: orange;
   border-radius: 40px;
   box-shadow: 13px 13px 0 #222;
 }
 
+strong,
+.primary-text {
+  color: initial;
+}
+
+.secondary-text {
+  color: red;
+}
+
 h1 {
   text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #222;
 }
 
 img {
   border-radius: 50%;
-  width: 12rem;
+  width: 12em;
   float: right;
+}
+
+@media (max-width: 1000px) {
+  img {
+    float: none;
+    display: block;
+    margin: auto;
+  }
 }
