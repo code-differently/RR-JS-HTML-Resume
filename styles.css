@@ -11,11 +11,35 @@ body {
   color: var(--primary-text-color);
   
   background-color: #2a9d8f;
+}
+
+#navbar {
+  display: sticky;
+  top: 0;
+  
+  margin: -10px; /* Negative so it goes to edge of window */
+  margin-bottom: 20px;
+  padding: 50px 25%;
+  background-color: #222;
+  
+  color: green;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+}
+
+#navbar * {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+#navbar :nth-child(4) {
+  margin-right: 0;
+  margin-left: auto;
 }
 
 #wrapper {
+  margin: auto;
   padding: 0 20px 20px;
   width: 50%;
   background-color: var(--background-color);
@@ -23,8 +47,6 @@ body {
   box-shadow: 13px 13px 0 #222;
 }
 
-/* Bold text overrides secondary text class */
-strong,
 .primary-text {
   color: var(--primary-text-color);
 }
