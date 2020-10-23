@@ -1,14 +1,15 @@
-* {
-  background-color: teal;
-}
-
 body {
+  background-color: teal;
   display: flex;
   justify-content: center;
 }
 
-body > div {
+#wrapper {
+  padding: 0 20px;
   width: 50%;
+  background-color: orange;
+  border-radius: 40px;
+  box-shadow: 13px 13px 0 #222;
 }
 
 h1 {
