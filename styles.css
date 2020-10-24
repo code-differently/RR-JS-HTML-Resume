@@ -17,9 +17,9 @@ body {
   display: sticky;
   top: 0;
   
-  margin: -10px; /* Negative so it goes to edge of window */
+  margin: -10px; /* Negative so it goes to edge of screen */
   margin-bottom: 20px;
-  padding: 50px 25%;
+  padding: 35px 25%;
   background-color: #222;
   
   color: green;
@@ -28,14 +28,30 @@ body {
   list-style: none;
 }
 
-#navbar * {
-  margin-right: 20px;
+#navbar a {
+  padding: 15px;
   font-size: 18px;
+  border-radius: 20px;
+  
+  transition: 0.2s;
 }
 
 #navbar :nth-child(4) {
-  margin-right: 0;
   margin-left: auto;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: var(--background-color-hover);
+}
+
+a:hover {
+  color: yellow;
+  background-color: #18343f;
+  border-radius: 20px;
 }
 
 #wrapper {
