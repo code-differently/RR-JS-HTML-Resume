@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="contact-form.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="navbar">
+    <a href='./index.html'>Home</a>
+    <a href="./contact-form.html">Contact</a>
+    <a href="https://www.linkedin.com/in/michael-mcmasters-aa11501b9/">LinkedIn</a>
+    <a href="google.com">About</a>
+  </div>
+
+  <div class="main-content-wrapper">
+
+    <form action="contact-form.html" method="post">
+
+      <h1 class="title">Contact</h1>
+
+      <!--
+          Name
+          last name
+          Mobile phone
+          Type of number (radio button)
+          Email
+          How did you hear about us dropdown. Searh
+        
+        -->
+
+      <fieldset>
+
+        <label for="name">Name:</label>
+        <br>
+        <input type=text" id="name" name="first-name">
+        <br>
+
+        <label for="name">Last Name:</label>
+        <br>
+        <input type=text" id="last-name" name="last-name">
+        <br>
+
+        <label for="name">Phone Number:</label>
+        <br>
+        <input type=text" id="phone-number" name="phone-number" placeholder="(xxx)-xxx-xxxx">
+        <br>
+
+        <label>Contact Type: </label>
+        <br>
+        <input type="radio" id="mobile" name="contact-type">
+        <label for="mobile">Mobile</label>
+        <br>
+        <input type="radio" id="landline" name="contact-type">
+        <label for="landline">Landline</label>
+        <br>
+
+      </fieldset>
+
+
+
+    </form>
+
+  </div>
+</body>
+
+</html>
