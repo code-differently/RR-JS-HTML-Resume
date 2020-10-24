@@ -42,7 +42,7 @@ img:hover {
   display: block;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1072px) {
   img {
     float: none;
     display: block;
