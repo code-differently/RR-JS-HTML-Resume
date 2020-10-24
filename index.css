@@ -1,8 +1,10 @@
+/* This is for CSS that only index.html uses. Global styles are in styles.css */
+
 img {
   border-radius: 50%;
   width: 12em;
   float: right;
-  
+
   transition: 0.2s;
 }
 
@@ -46,3 +48,4 @@ img:hover {
     display: block;
     margin: auto;
   }
+}

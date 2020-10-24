@@ -6,27 +6,26 @@ body {
   --background-color: #f4a261;
   --background-color-hover: #d88f53;
   --border-color: var(--secondary-text-color);
-  
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+
   color: var(--primary-text-color);
-  
+
   background-color: #2a9d8f;
 }
 
 #navbar {
   display: sticky;
   top: 0;
-  
-  margin: -10px; /* Negative so it goes to edge of screen */
-  margin-bottom: 20px;
+
+  margin: -10px -10px 20px -10px; /* Negative so div goes to edge of screen */
   padding: 35px 25%;
   background-color: #222;
-  
-  color: green;
+
   display: flex;
   flex-direction: row;
+  color: green;
   list-style: none;
 }
 
@@ -34,7 +33,7 @@ body {
   padding: 15px;
   font-size: 18px;
   border-radius: 20px;
-  
+
   transition: 0.2s;
 }
 
@@ -79,7 +78,7 @@ a:hover {
   padding: 10px 0px;
   border-radius: 40px 40px 0 0;
   border-bottom: 1px solid var(--border-color);
-  
+
   transition: 0.2s;
 }
 .title:hover {
