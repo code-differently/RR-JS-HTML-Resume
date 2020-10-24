@@ -1,3 +1,5 @@
+/* This is for global styles that all pages use */
+
 body {
   --primary-text-color: #222527;
   --secondary-text-color: rgb(70, 70, 70);
@@ -54,7 +56,7 @@ a:hover {
   border-radius: 20px;
 }
 
-#wrapper {
+.main-content-wrapper {
   margin: auto;
   padding: 0 20px 20px;
   width: 50%;
@@ -71,7 +73,7 @@ a:hover {
   color: var(--secondary-text-color);
 }
 
-h1 {
+.title {
   text-align: center;
   margin-top: 10px;
   padding: 10px 0px;
@@ -80,64 +82,6 @@ h1 {
   
   transition: 0.2s;
 }
-h1:hover {
+.title:hover {
   background-color: var(--background-color-hover);
-}
-
-img {
-  border-radius: 50%;
-  width: 12em;
-  float: right;
-  
-  transition: 0.2s;
-}
-
-img:hover {
-  cursor: pointer;
-  opacity: 0.9;
-}
-
-.background-fade {
-  transition: 0.2s;
-}
-
-.background-fade:hover {
-  background-color: var(--background-color-hover);
-}
-
-.hover-transition {
-  border-left: 0px solid var(--secondary-text-color);
-  transition: 0.4s;
-}
-
-.hover-transition:hover {
-  background-color: #d88f53;
-  border-left: 6px solid var(--secondary-text-color);
-  padding-left: 10px;
-}
-
-.company {
-  font-weight: bold;
-}
-
-.title {
-  font-style: bold;
-  color: var(--secondary-text-color);
-}
-
-.date {
-  font-style: italic;
-  color: var(--secondary-text-color);
-}
-
-.main-text {
-  display: block;
-}
-
-@media (max-width: 1000px) {
-  img {
-    float: none;
-    display: block;
-    margin: auto;
-  }
 }
