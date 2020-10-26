@@ -1,0 +1,57 @@
+,<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <title>CONTACT ME:</title>
+ 
+</head>
+<body>
+    
+    <form action="contact.html" method="post">
+        <h1>Contact Me</h1>
+       
+    <fieldset>
+
+        <label for="first_name"><strong>First Name:</strong></label><br>
+        <input type="text" id="name" name="user_first_name" required="required" maxlength="30"><br><br>
+
+        <label for="last_name"><strong>Last Name:</strong></label><br>
+        <input type="text" id="name" name="user_last_name" required="required" maxlength="30"><br><br>
+
+        <label for="phone_number"><strong>Contact Phone Number:</strong></label><br>
+        <input type="text" id="name" name="user_phone_number" required="required" maxlength="10"><br><br>
+
+        <label><strong>Phone Number Type:</strong></label><br>
+        <input type="radio" id="Landline" name="user_phone_number_type"><label for="landline">Landline</label><br>
+        <input type="radio" id="Mobile" name="user_phone_number_type"><label for="mobile">Mobile</label><br><br>
+    
+
+        <label for="email"><strong>Contact Email:</strong></label><br>
+        <input type="email" id="mail" name="user_email" required="required" maxlength="50"><br><br>
+
+        <label for="referral_method"><strong>How Did You Hear About Me?</strong></label><br>
+        <select id="referral_method" name="user_referral_method" required="required">
+            <option value="">--</option>
+            <option value="search_engine"><strong>Search Engine</strong></option>
+            <option value="social_media"><strong>Social Media</strong></option>
+            <option value="recruiter"><strong>Recruiter</strong></option>
+            </select><br><br>
+
+        
+        <label><strong>Interest in Contacting:</strong></label><br>
+        <input type="checkbox" id="HTML5" name="user_interest_in_contacting"><label><label for="HTML5"><strong>HTML5</strong></label><br>
+        <input type="checkbox" id="WordPress" name="user_interest_in_contacting"><label><label for="WordPress"><strong>WordPress</strong></label><br>
+        <input type="checkbox" id="GitHub" name="user_interest_in_contacting"><label><label for="GitHub"><strong>GitHub</strong></label><br><br>
+
+
+
+        <label for="message"><strong>Send Me a Message:</strong></label><br>
+        <textarea id="message" name="user_message" maxlength="250">            
+         
+
+    </fieldset>
+    </form> 
+</body>
+</html>
