@@ -1,14 +1,25 @@
 # Work Assignment - HTML Resume
 
-## Tech Stack
+## Description
+You will create a resume page and contact form using HTML. After completing each bullet point in the requirements, you should commit and push your changes. To commit a change, you can follow the following steps:
+
+1. Add files to staging: `git add .`
+2. Commit staged files: `git commit -m '<some-information-message-here>'
+3. Push changes to GitHub `git push`
+
+## Setup
+1. Fork this repository
+2. Clone your repository to your local machine `git clone`
+3. Open the project in your text editor
+4. Create HTML pages in the root directory
+5. Create a folder named 'images' and add image files to this directory
+
+### Tech Stack
 A list of expected technology to be used in this assignment
 
 * HTML
 * Web Browser
-
-## Assignment
-You will need to create an HTML based resume page. 
-
+ 
 ## Requirements
 
 ### Part 1
@@ -23,8 +34,6 @@ Create a web page that displays your resume. The web page should consist of the 
 * LinkedIn Profile Address
 * Profile Image
 * Any awards and/or certificates if applicable
-
-note: As we are not sending this form to be proccessed you can ignore the 
 
 ### Part 2
 
@@ -41,14 +50,8 @@ Now is time create a 2nd page. This page will contain a contact form. The form s
 * Use of labels with all form fields
 * Use of validation
 
-### Instructions
+### Submission
+Create a pull request from your project GitHub page
 
-1. Fork this repository
-2. Clone your repository to your local machine `git clone`
-3. Complete lab requirements
-	* Create HTML pages in the root directory
-	* Create a folder named 'images' and add image files to this directory
-4. Add files to staging: `git add .`
-5. Commit staged files: `git commit -m '<some-information-message-here>'
-6. Push changes to GitHub `git push`
-7. Finally create a pull request from your project GitHub page
+Happy Hacking!
+
