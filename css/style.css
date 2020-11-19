@@ -144,6 +144,17 @@ header img {
     max-height: 30px;
 }
 
+#headshot {
+	width: fit-content;
+}
+
+#interest {
+	list-style: none;
+}
+
+#contact table, th, td {
+	border: 1px solid black;
+  }
 /* ================================= 
   Media Queries
 ==================================== */

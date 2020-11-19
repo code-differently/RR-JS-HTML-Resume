@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+    <title>Contact Information</title>
+</head>
+
+<body>
+    <a href="index.html">Return to Main</a>
+   
+        <table id="contact">
+            <thead>
+                <h3>Contact</h3>
+                <tr>
+                    <th>Information</th>
+                    <th>Input</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="">First Name</label></td>
+                    <td><input type="text" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Last Name</label><input type="text" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Phone Number</label><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Phone Type</label><input type="radio"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Contact Email</label><input type="text" maxlength="50"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">How did you hear about us:</label>
+
+                        <select name="cars" id="cars">
+                            <option value="Search Engine">Search Engine</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Recruiter">Recruiter</option>
+                        </select>
+                </tr>
+                <tr>
+                    <td><label for="">Interest for contacting</label>
+                        <ul id="interest">
+                            <li><input type="checkbox" name="JavaScript" id="JavaScript">JavaScript</li>
+                            <li><input type="checkbox" name="Java" id="Java">Java</li>
+                            <li><input type="checkbox" name="SQL" id="SQL">SQL</li>
+                            <li><input type="checkbox" name="C-Sharp" id="C-Sharp">C-Sharp</li>
+                        </ul>
+                </tr>
+                <tr>
+                    <td><label for="">Message</label><input type="text" maxlength="250"></td>
+                </tr>                
+            </tbody>
+        </table> 
+
+* First Name (text field, limit of 30 characters)
+* Last Name (text field, limit of 30 characters)
+* Contact phone number (text field)
+* Phone number type: Landline, Mobile (radio button)
+* Contact email (text field, limit of 50 characters)
+* How did you hear about us: Search Engine, Social Media, Recruiter (drop down)
+* Interest for contacting: A list of your skills (check box)
+* Message (text area, limit of 250 characters)
+* Use of labels with all form fields
+* Use of validation
+
+</body>
+</html>
