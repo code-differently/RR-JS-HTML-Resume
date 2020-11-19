@@ -104,20 +104,31 @@ figcaption {
 
 .banner {
 	color: #fff;
-	background: #3acec2;
+	background: #3a49ce;
 	padding: 1.5em 0;
 	margin-bottom: 60px;
+	position: relative;
 }
 
 .col {
 	padding-right: 1em;
 	padding-left: 1em;
+	border: solid 2px grey;
+	display: table-cell;
 }
 
 .main-footer {
-	background: #d9e4ea;
 	padding: 2em 0;
 	margin-top: 30px;
+	text-align: center;
+	position: relative;
+    background: #3a49ce;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4);
+	width: 100%;
+	left: 0;
+    bottom: 0;
+	z-index: 999;
+	color: white;
 }
 
 /* ---- Page Elements ---- */
@@ -156,8 +167,15 @@ header img {
 	border: 1px solid black;
   }
 
-body main #objective {
-	margin: auto;
+#objective {
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+	
+}
+
+#objList li {
+
 }
 /* ================================= 
   Media Queries
@@ -181,10 +199,11 @@ body main #objective {
 	.container {
 		width: 90%;
 		margin: 0 auto;
+		display: table; /* Make the container element behave like a table */
 	}
 
-	.name,
-	.col {
+	.name
+	{
 		float: left;
 	}
 
