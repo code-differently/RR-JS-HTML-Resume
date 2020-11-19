@@ -44,7 +44,7 @@ img {
 figure {
 	margin: 0;
 	line-height: 0;
-  position: relative;
+	position: relative;
 }
 
 figcaption {
@@ -53,10 +53,26 @@ figcaption {
 	color: #fff;
 	padding: 1em;	
 	background: rgba(19,43,102, .85);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
+
+section ul {
+	margin-bottom: 1em;
+}
+
+section ul li:before {
+	content: "•"; /* Insert content that looks like bullets */
+	padding-right: 8px;
+	color: black; /* Or a color you prefer */
+  }
+
+  #objList li:before {
+	content: "•"; /* Insert content that looks like bullets */
+	padding-right: 8px;
+	color: black; /* Or a color you prefer */
+  }
 
 /* ================================= 
   Base Layout Styles
@@ -82,7 +98,7 @@ figcaption {
 	
 	.main-nav a {
 		font-size: .95em;
-		color: #3acec2;
+		color: #3a49ce;
 		text-transform: uppercase;
 	}
 
@@ -214,6 +230,7 @@ header img {
 
 	.main-nav {
 		float: right;
+		
 	}
 
 	.main-nav li {
