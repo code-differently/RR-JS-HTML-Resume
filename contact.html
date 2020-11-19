@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        @media (max-width: 610;) {
+            td {
+                float: left;
+                display: inline-block;
+            }
+            td:nth-child(2) {
+                clear: both; /*this isnt working...guess i need to watch a video*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="resume.html">Home</a>
+    </header>
+    <h3>Contact Me</h3>
+    <form>
+        <table>
+            <tr>
+                <td>First Name <input id="firstName" type="text" maxlength="30"></td>
+                <td class="second">Last Name <input id="lastName" type="text" maxlength="30"><br></td>
+            </tr>
+            <tr>
+                <td>Phone Number <input id="phoneNum" type="text"></td>
+                <td>Phone Type <input id="landline" type="radio" value="landline"><label for="landline">Landline</label>
+                    <input id="mobile" type="radio" value="mobile">
+                    <label for="mobile">Mobile</label></td>
+            </tr>
+            <tr>
+                <td>Email <input id="email" type="text" maxlength="50"></td>
+                <td>
+                    <label for="method">How did you hear about us?</label> 
+                    <select id="method" name="method">
+                        <option value="searchEngine">Search Engine</option>
+                        <option value="socialMedia">Social Media</option>
+                        <option value="recruiter">Recruiter</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <input type="submit">
+        
+        
+        
+        
+    </form>
+</body>
+</html>
