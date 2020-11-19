@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nick Satinover</title>
     <link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Nick Satinover's Resume Page</h1>
-        <a id="linkedIn" href="https://linkedin.com/in/nicksatinover">LinkedIn Profile</a>
-        <img id="headshot" src="img/Headshot.JPG" alt="Headshot">
-        <a href="contact.html">Contact Me</a>
+    <header class="main-header">
+        <div class="container clearfix">
+            <h1 class="name">Nick Satinover's Resume Page</h1>
+            <ul class="main-nav">
+                <li><a id="linkedIn" href="https://linkedin.com/in/nicksatinover">LinkedIn Profile</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
     </header>
 
+    <div class="banner">
+        <img class="logo" id="headshot" src="img/Headshot.JPG" alt="Headshot">
+        <h1 class="headline">Developer Open for New Opportunities</h1>
+        <span class="tagline">Tenured Banking Professional</span>
+    </div>
     <main>
-        <article>
 
-            <section>
+        <div id="objective">
             <h2>Objective</h2>
             <ul>
                 <li>Learn front end dev skills</li>
                 <li>Full stack development</li>
                 <li>Improve as a technologist</li>
             </ul>
-        </section>
+        </div>
+        
+    <div class="container clearfix">
 
-        <section>
+
+
             <h2>Work Experience</h2>
             <ul>
                 <li>APPLICATION DEVELOPER</li>
@@ -37,9 +48,7 @@
                 <li>CLIENT SERVICE – PRIVATE BANKING</li>
                 <li>ADDITIONAL POSITIONS: CAPITAL ONE</li>
             </ul>
-        </section>
 
-        <section>
             <h2>Education</h2>
             <ul>
                 <li>CODE DIFFERENTLY </li>
@@ -47,9 +56,7 @@
                 <li>MASTERS BUSINESS ADMINISTRATION - INFORMATION TECHNOLOGY </li>
                 <li>BACHELOR SCIENCE – BUSINESS MARKETING </li>
             </ul>
-        </section>
 
-        <section>
             <h2>Skills</h2>
             <ul>
                 <li>.NET Framework</li>
@@ -67,16 +74,13 @@
                 </li>
 
             </ul>
-        </section>
 
-        </article>
-
-
-
-    </main>
+        </main>
+    </div>
 
     <footer>
 
     </footer>
 </body>
+
 </html>
