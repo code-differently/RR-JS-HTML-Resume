@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ * {
+	 box-sizing: border-box;
+	 margin: 0;
+	 padding: 0;
+	 font-size: 62.5%;
+	 font-family: 'Roboto', sans-serif;
+}
+ .banner {
+	 position: relative;
+}
+ .banner__splash__social {
+     border-radius: 10px;
+	 display: flex;
+	 flex-direction: column;
+	 left: -2.0rem;
+	 top: calc(50% - 3rem);
+	 background-color: #5f1cf2;
+	 min-height: 17rem;
+	 min-width: 4rem;
+	 position: absolute;
+	 align-items: center;
+	 justify-content: space-between;
+}
+ .banner__splash__social i {
+	 padding: 1rem 0;
+	 color: white;
+	 font-size: 2.5rem;
+	 transition: color 0.25s ease-in-out;
+	 cursor: pointer;
+}
+.banner__splash__social--fixed {
+    position: fixed;
+    top:calc(50% - 8.5rem);
+    left:1.25%;
+}
+ .banner__splash__social i:hover {
+	 color: #9bdae2;
+}
+ .banner__nav {
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 padding: 1rem 2rem;
+}
+ .banner__nav__name {
+	 font-size: 5rem;
+}
+ .banner__nav__links {
+	 display: flex;
+}
+ .banner__nav__links__link {
+	 transition: color 0.25s ease-in-out;
+	 cursor: pointer;
+     margin: 0 1rem;
+     font-size:2rem;
+}
+ .banner__nav__links__link:hover {
+	 color: #5f1cf2;
+}
+ .banner__splash {
+     position: relative;
+	 height: 60rem;
+	 background-image: linear-gradient(to right, rgba(155, 218, 226, 0.4), rgba(155, 218, 226, 0.4)), url('https://images.pexels.com/photos/1076241/pexels-photo-1076241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+	 background-position: center bottom;
+	 background-size: cover;
+	 margin: 0 3rem;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 justify-content: center;
+}
+ .banner__splash__name {
+	 margin-top: 7rem;
+	 color: white;
+	 font-size: 6rem;
+	 font-weight: 800;
+	 letter-spacing: 4px;
+	 text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+}
+ .banner__splash .hr {
+	 width: 50%;
+	 background-color: rgba(255, 255, 255, .5);
+	 height: 0.125rem;
+}
+ .banner__splash p {
+	 text-align: center;
+	 color: white;
+	 margin-top: 1rem;
+	 font-size: 2rem;
+}
+
+.about {
+    background-color:grey;
+    height:200rem;
+}
