@@ -3,74 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/contact.css">
     <title>Contact Information</title>
 </head>
 
 <body>
-    <a href="../index.html">Return to Main</a>
-   
-        <table id="contact">
-            <thead>
-                <h3>Contact</h3>
-                <tr>
-                    <th>Information</th>
-                    <th>Input</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><label for="">First Name</label></td>
-                    <td><input type="text" maxlength="30"></td>
-                </tr>
-                <tr>
-                    <td><label for="">Last Name</label></td>
-                    <td><input type="text" maxlength="30"></td>
-                </tr>
-                <tr>
-                    <td><label for="">Phone Number</label></td>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td><label for="">Phone Type</label></td>
-                    <td><input type="radio"></td>
-                </tr>
-                <tr>
-                    <td><label for="">Contact Email</label></td>
-                    <td><input type="text" maxlength="50"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="">How did you hear about us:</label>
-                    </td>   
-                    <td>
-                        <select name="HearAbout" id="HearAbout">
-                            <option value="Search Engine">Search Engine</option>
-                            <option value="Social Media">Social Media</option>
-                            <option value="Recruiter">Recruiter</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="">Interest for contacting</label>
-                    </td>
-                    <td>
-                        <ul id="interest">
-                            <li><input type="checkbox" name="JavaScript" id="JavaScript">JavaScript</li>
-                            <li><input type="checkbox" name="Java" id="Java">Java</li>
-                            <li><input type="checkbox" name="SQL" id="SQL">SQL</li>
-                            <li><input type="checkbox" name="C-Sharp" id="C-Sharp">C-Sharp</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="">Message</label></td>
-                    <td><input type="text" maxlength="250"></td>
-                </tr>                
-            </tbody>
-        </table> 
+    
+    <header class="main-header">
+        <div class="container clearfix">
+            <h1 class="name">Contact Nick Satinover</h1>
+            <ul class="main-nav">
+                <li><a id="linkedIn" href="https://linkedin.com/in/nicksatinover">LinkedIn Profile</a></li>
+                <li><a href="../index.html">Return to Main</a></li>
+                <li><a href="../pages/experience.html">Experience</a></li>
+            </ul>
+        </div>
+    </header>
+
+<table id="outTable">
+    <tr>
+        <td>
+            <table id="contact">
+                <thead>
+                    <tr>
+                        <th>Information</th>
+                        <th>Input</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label for="">First Name</label></td>
+                        <td><input type="text" maxlength="30"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Last Name</label></td>
+                        <td><input type="text" maxlength="30"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Phone Number</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Phone Type</label></td>
+                        <td>
+                            <label>Cell</label><input type="radio">
+                            <label>Home</label><input type="radio">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Contact Email</label></td>
+                        <td><input type="text" maxlength="50"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">How did you hear about us:</label>
+                        </td>   
+                        <td>
+                            <select name="HearAbout" id="HearAbout">
+                                <option value="Search Engine">Search Engine</option>
+                                <option value="Social Media">Social Media</option>
+                                <option value="Recruiter">Recruiter</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Interest for contacting</label>
+                        </td>
+                        <td>
+                            <ul id="interest">
+                                <li><input type="checkbox" name="JavaScript" id="JavaScript">JavaScript</li>
+                                <li><input type="checkbox" name="Java" id="Java">Java</li>
+                                <li><input type="checkbox" name="SQL" id="SQL">SQL</li>
+                                <li><input type="checkbox" name="C-Sharp" id="C-Sharp">C-Sharp</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Message</label></td>
+                        <td><input id="message" type="text" maxlength="250"></td>
+                    </tr>                
+                </tbody>
+                <tfoot>
+    
+                </tfoot>
+            </table> 
+        </td>
+        <td>
+            <div id="resume">
+                <div id="resumeHover" style="display: none;">Resume</div>
+                <a  href="../Files/Nick Satinover - Resume.docx" download="Resume">
+                    <img id="resumeLink" src="../img/resume.png" />
+                </a>
+            </div>
+            <div id="transcript">
+                <a  href="../Files/UD Official Transcript.pdf" download="Transcript">
+                    <img id="transLink" src="../img/transcript.jpg" />
+                </a>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+
 
 <!-- * First Name (text field, limit of 30 characters)
 * Last Name (text field, limit of 30 characters)
