@@ -7,7 +7,8 @@
 	 font-family: 'Roboto', sans-serif;
 }
  .banner {
-	 position: relative;
+     position: relative;
+     background-color: #F4F5F0;
 }
  .banner__splash__social {
      border-radius: 10px;
@@ -91,6 +92,9 @@
 }
 
 .about {
-    background-color:grey;
+    background-color: #F4F5F0;
     height:200rem;
+}
+.profile-img img{
+    border-radius: 50%;
 }
