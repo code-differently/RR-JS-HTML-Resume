@@ -1,0 +1,42 @@
+<div id="after_submit"></div>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="name">First Name:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" maxlength="30" /><br />
+    <label class="required" for="name">Last Name:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" maxlength="30" /><br />
+
+    <label class="required" for="name">Contact Phone Number:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+
+  
+    <input type="radio" id="Landline" name="gender" value="Landline">
+    <label for="Landline">Landline</label><br>
+    <input type="radio" id="Mobile" name="gender" value="female">
+    <label for="Mobile">Mobile</label><br>
+
+  <div class="row">
+    <label class="required" for="email">Contact email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" maxlength="50" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+
+  <label for="hear">How did you hear about us:</label>
+<select id="hear" name="hear">
+  <option value="Search Engine">Search Engine</option>
+  <option value="Social Media">Social Media</option>
+  <option value="Recruiter">Recruiter</option>
+  <option value="Other">Other</option>
+</select>
+
+
+  <div class="row">
+    <label class="required" for="message">Your message:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br maxlength="50" />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+
+    <input id="submit_button" type="submit" value="Send email" />
+</form>
