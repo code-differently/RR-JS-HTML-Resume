@@ -39,7 +39,6 @@ Create a web page that displays your resume. The web page should consist of the 
 
 Now is time create a 2nd page. This page will contain a contact form. The form should have the following fields:
 
-* First Name (text field, limit of 30 characters)
 * Last Name (text field, limit of 30 characters)
 * Contact phone number (text field)
 * Phone number type: Landline, Mobile (radio button)
