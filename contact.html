@@ -8,37 +8,103 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-        @media (max-width: 610;) {
-            td {
+        
+        @media (max-width: 750) {
+            /* table{
+                display:block;
+                float:left;
+                clear:both;
+            }
+            tr,td{
+                display: block;
+
+                }
+            td{
+                width: 50%;
+                float: left;
+                }
+            td.second{
+                width:100%;
+                float:left;
+                clear:both
+                } */
+            /* td {
                 float: left;
                 display: inline-block;
+            } */
+            table tr th:nth-child(2),
+            .second {
+                clear: both;
+                visibility: hidden;
             }
-            td:nth-child(2) {
-                clear: both; /*this isnt working...guess i need to watch a video*/
-            }
-        }
+        } /*this isnt working for some reason*/
     </style>
 </head>
 <body>
     <header>
         <a href="resume.html">Home</a>
     </header>
-    <h3>Contact Me</h3>
-    <form>
+    
+    <form action="contact.html" method="post">
+        <h3>Contact Me</h3>
+        <!-- <label for="firstName">First Name</label>
+        <input id="firstName" type="text" maxlength="30">
+        <label for="lastName">Last Name</label>
+        <input id="lastName" type="text" maxlength="30"><br>
+        <label for="phoneNum" minlength="10">Phone Number</label>
+        <input id="phoneNum" type="text">
+        Phone Type 
+        <input id="landline" type="radio" value="landline">
+        <label for="landline">Landline</label>
+        <input id="mobile" type="radio" value="mobile">
+        <label for="mobile">Mobile</label><br>
+        <label for="email">Email</label>
+        <input id="email" type="email" maxlength="50">
+        <label for="method">How did you hear about us?</label> 
+        <select id="method" name="method">
+            <option value="searchEngine">Search Engine</option>
+            <option value="socialMedia">Social Media</option>
+            <option value="recruiter">Recruiter</option>
+        </select><br>
+        Interest for Contacting 
+        <input type="checkbox" id="HTML" name="HTML" value="HTML">
+        <label for="HTML">HTML</label>
+        <input type="checkbox" id="CSS" name="CSS" value="CSS">
+        <label for="CSS">CSS</label>
+        <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">
+        <label for="JavaScript">JavaScript</label><br>
+        <label for="message">Message</label>
+        <input id="message" type="text" maxlength="250"><br> -->
         <table>
             <tr>
-                <td>First Name <input id="firstName" type="text" maxlength="30"></td>
-                <td class="second">Last Name <input id="lastName" type="text" maxlength="30"><br></td>
-            </tr>
-            <tr>
-                <td>Phone Number <input id="phoneNum" type="text"></td>
-                <td>Phone Type <input id="landline" type="radio" value="landline"><label for="landline">Landline</label>
-                    <input id="mobile" type="radio" value="mobile">
-                    <label for="mobile">Mobile</label></td>
-            </tr>
-            <tr>
-                <td>Email <input id="email" type="text" maxlength="50"></td>
                 <td>
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" type="text" maxlength="30">
+                </td>
+                <td class="second">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" type="text" maxlength="30">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phoneNum" minlength="10">Phone Number</label>
+                    <input id="phoneNum" type="text">
+                </td>
+                <td class="second">
+                    Phone Type 
+                    <input id="landline" type="radio" value="landline">
+                    <label for="landline">Landline</label>
+                    <input id="mobile" type="radio" value="mobile">
+                    <label for="mobile">Mobile</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" maxlength="50">
+                </td>
+                <td class="second">
                     <label for="method">How did you hear about us?</label> 
                     <select id="method" name="method">
                         <option value="searchEngine">Search Engine</option>
@@ -47,9 +113,26 @@
                     </select>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    Interest for Contacting 
+                    <input type="checkbox" id="HTML" name="HTML" value="HTML">
+                    <label for="HTML">HTML</label>
+                    <input type="checkbox" id="CSS" name="CSS" value="CSS">
+                    <label for="CSS">CSS</label>
+                    <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">
+                    <label for="JavaScript">JavaScript</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="second">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="3" cols="30" maxlength="250"></textarea>
+                </td>
+            </tr>
         </table>
         <input type="submit">
-        
+        <!-- <button type="submit">Submit</button> -->
         
         
         
