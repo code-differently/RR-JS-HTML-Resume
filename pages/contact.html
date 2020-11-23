@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <title>Contact Information</title>
 </head>
 
 <body>
+
     
     <header class="main-header">
         <div class="container clearfix">
             <h1 class="name">Contact Nick Satinover</h1>
+
             <ul class="main-nav">
+                <li>
+                    <div id="resume">
+                        <div id="resumeHover" style="display: none;">Resume</div>
+                        <a href="../Files/Nick Satinover - Resume.docx" download="Resume">
+                            <span title="Resume"><img id="resumeLink" src="../img/resume.png"/></span>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <div id="transcript">
+                        <a href="../Files/UD Official Transcript.pdf" download="Transcript">
+                            <span title="UD Transcript"><img id="transLink" src="../img/transcript.jpg"/>
+                        </a>
+                    </div>
+                </li>
+
                 <li><a id="linkedIn" href="https://linkedin.com/in/nicksatinover">LinkedIn Profile</a></li>
                 <li><a href="../index.html">Return to Main</a></li>
                 <li><a href="../pages/experience.html">Experience</a></li>
@@ -22,104 +43,93 @@
         </div>
     </header>
 
-<table id="outTable">
-    <tr>
-        <td>
-            <table id="contact">
-                <thead>
-                    <tr>
-                        <th>Information</th>
-                        <th>Input</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><label for="">First Name</label></td>
-                        <td><input type="text" maxlength="30"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Last Name</label></td>
-                        <td><input type="text" maxlength="30"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Phone Number</label></td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Phone Type</label></td>
-                        <td>
-                            <label>Cell</label><input type="radio">
-                            <label>Home</label><input type="radio">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Contact Email</label></td>
-                        <td><input type="text" maxlength="50"></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="">How did you hear about us:</label>
-                        </td>   
-                        <td>
-                            <select name="HearAbout" id="HearAbout">
-                                <option value="Search Engine">Search Engine</option>
-                                <option value="Social Media">Social Media</option>
-                                <option value="Recruiter">Recruiter</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="">Interest for contacting</label>
-                        </td>
-                        <td>
-                            <ul id="interest">
-                                <li><input type="checkbox" name="JavaScript" id="JavaScript">JavaScript</li>
-                                <li><input type="checkbox" name="Java" id="Java">Java</li>
-                                <li><input type="checkbox" name="SQL" id="SQL">SQL</li>
-                                <li><input type="checkbox" name="C-Sharp" id="C-Sharp">C-Sharp</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Message</label></td>
-                        <td><input id="message" type="text" maxlength="250"></td>
-                    </tr>                
-                </tbody>
-                <tfoot>
-    
-                </tfoot>
-            </table> 
-        </td>
-        <td>
-            <div id="resume">
-                <div id="resumeHover" style="display: none;">Resume</div>
-                <a  href="../Files/Nick Satinover - Resume.docx" download="Resume">
-                    <img id="resumeLink" src="../img/resume.png" />
-                </a>
-            </div>
-            <div id="transcript">
-                <a  href="../Files/UD Official Transcript.pdf" download="Transcript">
-                    <img id="transLink" src="../img/transcript.jpg" />
-                </a>
-            </div>
-        </td>
-    </tr>
-</table>
+    <form action="contact.html" method="POST">
+        <h2>Contact Me</h2>
 
+        <fieldset>
+            <legend><span class="number">1</span>Name</legend>
 
+            <label for="fName">First Name</label>
+            <input type="text" id="fName" maxlength="30">
 
+            <label for="lName">Last Name</label>
+            <input type="text" id="lName" maxlength="30">
 
-<!-- * First Name (text field, limit of 30 characters)
-* Last Name (text field, limit of 30 characters)
-* Contact phone number (text field)
-* Phone number type: Landline, Mobile (radio button)
-* Contact email (text field, limit of 50 characters)
-* How did you hear about us: Search Engine, Social Media, Recruiter (drop down)
-* Interest for contacting: A list of your skills (check box)
-* Message (text area, limit of 250 characters)
-* Use of labels with all form fields
-* Use of validation -->
+        </fieldset>
+
+        <fieldset>
+            <legend><span class="number">2</span>Contact Information</legend>
+
+            <label for="phoneNumber">Phone Number</label>
+            <input type="number" id="phoneNumber">
+
+            <br />
+            <br />
+
+            <label>Phone Type</label>
+            <br />
+            <label class="radioLabel" for="cell">Cell</label>
+            <input type="radio" id="cell" name="phone_type">
+
+            <label class="radioLabel" for="home">Home</label>
+            <input type="radio" id="home" name="phone_type">
+
+            <label for="email">Contact Email</label>
+            <input type="email" id="email" maxlength="50">
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend><span class="number">3</span>How did you hear about us:</legend>
+
+            <select name="HearAbout" id="HearAbout">
+                <option value="none">-- Select -- </option>
+                <optgroup label="Online">
+                    <option value="searchEngine">Search Engine</option>
+                    <option value="socialMedia">Social Media</option>
+                </optgroup>
+                <optgroup label="Word of Mouth">
+                    <option value="recruiter">Recruiter</option>
+                    <option value="coWorker">Co-worker</option>
+                </optgroup>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+
+            <label>Interest for contacting</label>
+
+            <ul id="interest">
+                <li>
+                    <input type="checkbox" name="javaScript" id="javaScript">
+                    <label class="light" for="javaScript">JavaScript</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="java" id="java">
+                    <label class="light" for="javaScript">Java</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="sql" id="sql">
+                    <label class="light" for="javaScript">SQL</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="cSharp" id="cSharp">
+                    <label class="light" for="javaScript">C-Sharp</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <label for="message">Message</label>
+            <input id="message" type="text" maxlength="250">
+        </fieldset>
+
+        <!-- Older form -->
+    </form>
+
 
 </body>
+
 </html>

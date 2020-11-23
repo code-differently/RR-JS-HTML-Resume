@@ -1,0 +1,60 @@
+/* Element */
+
+
+
+/* h3 {
+    margin: 1em;
+} */
+
+input {
+    margin: 0 5px;
+}
+
+/* ID */
+
+#contact td, 
+th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+#contact {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+#HearAbout {
+    width: 100%;
+}
+
+#message {
+    display: inline-block;
+    line-height:  500%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#resume,
+#transcript {
+    width: 100px;
+    height: 100px;
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+    align-items: center; 
+  }
+
+  /* #resume:hover #resumeHover{
+      display: block;
+  } */
+
+  div {
+      text-align: left;
+  }
+
+  
