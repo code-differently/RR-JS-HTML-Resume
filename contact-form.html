@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <form action="contact form.html" method="post">
+            <h1>Contact Me!</h1>
+
+            <fieldset>
+                <legend>Your Information</legend><br>
+
+                <label for="f_name">First Name:</label>
+                <input type="text" id="f_name" name="first_name" maxlength="30" placeholder="First Name" required><br><br>
+
+                <label for="l_name">Last Name:</label>
+                <input type="text" id="l_name" name="last_name" maxlength="30" placeholder="Last Name" required><br><br>
+
+                <label for="tel">Phone Number:</label>
+                <input type="text" id="tel" name="telephone" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br><br>
+                <label for="land_line">Landline?</label>
+                <input type="radio" id="land_line" name="number_type" value="Landline" required><br>
+                <label for="mobile">Mobile?</label>
+                <input type="radio" id="mobile" name="number_type" value="Mobile" required><br><br>
+
+                <label for="mail">Email Address:</label>
+                <input type="email" id="mail" name="user_email" maxlength="50" placeholder="Email@address.com">
+            </fieldset><br>
+
+            <fieldset>
+                <legend>How did you hear about me?</legend>
+                <select>
+
+                        <option value="recruiter">Recruiter</option>
+                <optgroup label="Search Engine">
+                        <option value="google">Google</option>
+                        <option value="bing">Bing</option>
+                        <option value="yahoo">Yahoo</option>
+                    </optgroup>
+                <optgroup label="Social Media">
+                        <option value="instagram">Instagram</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="linkedin">LinkedIn</option>
+                </optgroup>
+                        <option value="other">Other</option>
+
+                </select>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Interest for Contacting:</legend>
+                <input type="checkbox" id="teacher" value="interest_teacher" name="user_interest"><label for="teacher">Teacher</label><br>
+                <input type="checkbox" id="tutor" value="interest_tutor" name="user_interest"><label for="tutor">Tutor</label><br>
+                <input type="checkbox" id="child_care" value="interest_child_care" name="user_interest"><label for="child_care">Child Care</label><br>
+                <input type="checkbox" id="html" value="interest_html" name="user_interest"><label for="html">HTML</label><br>
+                <input type="checkbox" id="css" value="interest_css" name="user_interest"><label for="css">CSS</label><br>
+                <input type="checkbox" id="java_script" value="interest_java_script" name="user_interest"><label for="java_script">Java Script</label><br>
+            </fieldset><br>
+
+            <fieldset>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="user_message" maxlength="250"></textarea>
+            </fieldset>
+        </form>
+    </body>
+</html>
