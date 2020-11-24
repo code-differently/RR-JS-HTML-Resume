@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="contact.html" method="post">
+
+        <h1>Contact Form</h1>
+
+            <fieldset>
+
+                <legend><span>1.</span> Your Basic Info</legend><br>
+
+                    <label for="f_name">First Name:</label>
+                    <input type="text" id="first_name" name="f_name" maxlength="30" placeholder="First Name" required><br><br>
+
+                    <label for="l_name">Last Name:</label>
+                    <input type="text" id="last_name" name="l_name" maxlength="30" placeholder="Last Name" required><br><br>
+
+                    <label for="tele">Contact Phone Number:</label>
+                    <input type="text" id="telephone" name="tele" placeholder="###-###-####" maxlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+                    <span>Phone Number Type:</span>
+                        <input type="radio" id="land_line" name="num_type" value="Landline" required>
+                        <label for="landline">Landline</label>
+                        
+                        <input type="radio" id="cellphone" name="num_type" value="mobile">
+                        <label for="mobile">Mobile</label><br><br>
+
+                        <label for="email">Contact Email:</label>
+                        <input type="text" id="email_add" name="email" maxlength="50" placeholder="your@email.com" required><br><br>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend><span>2.</span> Connecting</legend><br>
+
+                <label for="howDidYouHear">How Did You Hear About Us?</label>
+                <select name="howDidYouHear" id="howdid" required>
+                    <option value="searchEngine">Search Engine</option>
+                    <option value="socialMedia">Social Media</option>
+                    <option value="recruiter">Recruiter</option>
+                </select><br><br>
+
+                <label for="interest">Interest for Contacting:</label><br><br>
+
+                <input type="checkbox" id="contact1" name="interest1" value="photog">
+                <label for="interest1">Photography</label><br><br>
+
+                <input type="checkbox" id="contact2" name="interest2" value="audio">
+                <label for="interest2">Audiowork</label><br><br>
+                
+                <input type="checkbox" id="contact3" name="interest3" value="dev">
+                <label for="interest3">Developer Skills</label><br><br>
+
+                <input type="checkbox" id="contact4" name="interest4" value="other>
+                <label for="other">Other</label><br><br>
+
+                <span>Please Provide Details:</span><br><br>
+                <textarea name="details" id="details" maxlength="250"></textarea>
+
+            </fieldset>
+
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
