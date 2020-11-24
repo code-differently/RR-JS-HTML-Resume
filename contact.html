@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Contact Form</title>
+</head>
+    <body>
+       <h1>Contact Form</h1>
+        <form action="contact.html" method="post">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" maxlength="30"><br>
+            
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"  maxlength="30">
+            
+
+            <br>
+
+            <label for="Phone">Contact Phone number:</label><br>
+            <input type="text" id="Phone" name="Phone">
+
+            <br>
+            <br>
+
+            <label for="phone_number">Phone number type:</label><br>
+            <input type="radio" id="phone_number" name="phone_type" value="phone_number">
+            <label for="male">Landline</label><br>
+            <input type="radio" id="phone_number" name="phone_type" value="phone_number">
+            <label for="male">Mobile</label><br>
+            
+            
+            <br>
+
+
+            <label for="email">Contact email:</label><br>
+            <input type="email" id="mail" name="user_email" maxlength="50">
+
+            <br>
+            <br>
+
+            <label for="inquiry">How did you hear about us:</label><br>
+            <label for="source">Choose your source from the list:</label><br>
+            <input list="sources" name="source" id="source">
+
+            <datalist id="sources">
+            <option value="Search engine">
+            <option value="Social Media">
+            <option value="Recruiter">
+
+            </datalist>
+
+            <br>
+            <br>
+
+            <label for="interest">Interest for contacting:</label><br>
+            <input type="checkbox" id="skill1" name="skill1" value="html">
+            <label for="skill1"> HTML</label><br>
+            <input type="checkbox" id="skill2" name="skill2" value="CSS">
+            <label for="skill2"> CSS</label><br>
+            <input type="checkbox" id="skill3" name="skill3" value="Javascript">
+            <label for="skill3"> Javascript</label>
+
+            <br>
+            <br>
+
+            <label for="message">Message:</label><br>
+            <input type="text" id="message" name="message" maxlength="250" > 
+            <br>
+            <br>
+            <input type="submit" value="Submit Form">
+        </form>
+    </body>
+</html>
