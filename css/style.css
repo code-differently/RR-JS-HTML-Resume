@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(../img/floatingMattHead.PNG);
+    background-color: #535353;
+    text-align: center;
+}
+ 
+.showtime {
+
+
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: unset;
+
+
+}
+
+.subtitle {
+
+    font-size: 2em;
+    text-decoration-style: cornsilk double;
+    color: rgb(82, 0, 0);
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.nottime {
+
+    background-color: rgba(250, 176, 116, 0.116);
+    text-align: center;
+    font-weight: 800;
+    width:65%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    padding-left: 5em ;
+    padding-right: 8em ; 
+}
+
+
+.listsonlists {
+    font-style: italic;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: cover;
+    width: 100%;
+
+}
+
+.origin:hover {
+    transform-origin: 0 0;
+    transform: translate(-100%, 50%) rotate(45deg) translate(100%, -50%);
+
+
+
+}
+
+h1 {
+    font-size: 4em;
+    color: rgb(0, 0, 0);
+    outline-color: plum;
+    padding-top: 1em;
+    
+}
+
+a { 
+    color: rgb(67, 0, 250);
+    text-decoration: none;  
+    transform-origin: 0 0;
+}
+
+a:hover {
+    background-color: rgb(67, 0, 250);
+    color: white;
+    transition: background-color 1s;
+    transform-origin: 0 0;
+    transform: translate(-100%, 50%) rotate(45deg) translate(100%, -50%);
+  }
+
+
+h2 {
+    background: hsla(54, 100%, 85%, 0.253);
+    background-size: cover;
+    width: 99%;
+    margin: 50%, 25%;
+    text-align: center;
+}
+
+p {
+    padding: 1em;
+    width: cover;
+    margin: 0 auto;
+    mix-blend-mode: multiply;  
+
+}
+
+section ul {
+
+    background: hsla(315, 43%, 70%, 0.444);
+    width: cover;
+    text-align: center;
+    font-size: 5em;
+    padding: 1.3em;
+    margin: rgba(209, 13, 13, 0.705)  ;
+}
+
+
+section ul li:before {
+
+    background: hsla(315, 43%, 70%, 0.444);
+    width: cover;
+    text-align: center;
+    padding: 1.3em;
+    margin: rgba(209, 13, 13, 0.705) ;
+}
+
+li{
+
+    width: max-content;
+    margin: auto ;
+}
+
+body{
+
+    background-color: rgba(255, 0, 0, 0.315);
+    margin: 0 auto;
+    padding: 3em auto;
+    width: cover;
+    text-align: center;
+}
+
+.center{ 
+   
+    margin: cover;
+    background:hsla(315, 43%, 70%, 0.444);
+    width: 99%;
+    text-align: center; 
+
+}
+
+
+
+
+
+ 
+
+footer {
+
+    background: rgba(208, 147, 248, 0.801);
+    width: fit-content;
+    text-align: center;
+    color: rgb(36, 5, 44);
+    margin: 1em auto;
+    padding: 1.5em;
+}
+
