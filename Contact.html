@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Please enter the following information if you desire to have me on your team</h2>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br>
+  <label for="pnum">Phone number:</label><br>
+  <input type="text" id="pnum" name="pnum" value=""><br>
+    <label for="pnty">Phone number type:</label><br>
+<form>
+  <input type="radio" id="pnty" name="Phone number type" value="cell">
+  <label for="cell">Cell</label><br>
+  <input type="radio" id="pnty" name="Phone number type" value="home">
+  <label for="home">Home</label><br>
+  <input type="radio" id="pnty" name="Phone number type" value="office">
+  <label for="office">Office</label>
+</form>
+<br><br>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" value=""><br>
+   <br><br>
+  <form action="/action_page.php">
+  <label for="source">How did you find me?:</label>
+  <select name="source" id="source">
+    <option value="Recruiter">Recruiter</option>
+    <option value="LinkedIn">LinkedIn</option>
+    <option value="Recruiter">Recruiter</option>
+    <option value="Misc">Misc</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+  <br><br>
+    <label for="skills">Please list any of the skills mentioned that you were interested in (use commas if there is more than one):</label><br>
+  <input type="text" id="skills" name="skills" value=""><br>
+  <div class="wrapper">
+  <h3>If you have any comments, questions, or would likek to speak to me, please feel free to write down an quite message, and I will get back to you as soon as possible. (Max of 250 characters)</h3>
+  <textarea name="messagecount" id="messagecount" maxlength="250" placeholder="Start Typin..."autofocus></textarea>
+  <div id="the-count">
+    <span id="current">0</span>
+    <span id="maximum">/ 250</span>
+  </div>
+</div>
+  
+</form>
+</form>
+
+</body>
+</html>
