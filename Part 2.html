@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Contact Form</title>
+
+</head>
+
+<body>
+    <form action="Contact-Form.html" method="post">
+        <h1 class="title">Contact Form</h1>
+            <fieldset>
+                <legend>Your Basic Info</legend><br>
+
+                    <label for="f_name">First Name:</label>
+                    <input type="text" id="first_name" name="f_name" maxlength="30" placeholder="First Name" required><br><br>
+
+                    <label for="l_name">Last Name:</label>
+                    <input type="text" id="last_name" name="l_name" maxlength="30" placeholder="Last Name" required><br><br>
+
+                    <label for="tele">Contact Phone Number:</label>
+                    <input type="text" id="telephone" name="tele" placeholder="###-###-####" maxlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+                    <span>Phone Number Type:</span>
+                        <input type="radio" id="land_line" name="num_type" value="Landline" required>
+                        <label for="landline">Landline</label>
+                        
+                        <input type="radio" id="cellphone" name="num_type" value="mobile">
+                        <label for="mobile">Mobile</label><br><br>
+
+                        <label for="email">Contact Email:</label>
+                        <input type="text" id="email_add" name="email" maxlength="50" placeholder="Your@email.com" required><br><br>
+            </fieldset><br><br>
+            
+            <fieldset>  
+                <legend>Contact</legend><br>
+
+                    <label for="marketing">How Did You Hear About Us?</label>
+                    <select name="marketing" id="marketing" required>
+                        <option value="search-engine">Search Engine</option>
+                        <option value="social media">Social Media</option>
+                        <option value="recruiter">Recruiter</option>
+                    </select>
+
+            </fieldset><br><br>
+                
+            <fieldset>  
+                 <legend>Interest for Contacting</legend><br>
+
+                    <input type="checkbox" name="interest1" id="skills1" required>
+                    <label for="interest1">JavaScript</label><br><br>
+
+                    <input type="checkbox" name="interest2" id="skills2" required>
+                    <label for="interest2">Java</label><br><br>
+
+                    <input type="checkbox" name="interest3" id="skills3" required>
+                    <label for="interest3">Web Development</label><br><br>
+
+                    <input type="checkbox" name="interest4" id="skills4" required>
+                    <label for="interest4">Operational Leadership</label><br><br>
+
+                                        
+                    <label for="message">Additional Information</label><br><br>
+                    <textarea name="message" id="message" maxlength="250" placeholder="Type message here..."></textarea>
+
+            </fieldset><br><br>
+
+            <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
