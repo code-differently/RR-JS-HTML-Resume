@@ -1,0 +1,70 @@
+<div id="after_submit"></div>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+  <section>
+    <div class="row">
+        <label class="required" for="name">First Name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" maxlength="30" /><br />
+        <label class="required" for="name">Last Name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" maxlength="30" /><br />
+        <label class="required" for="name">Contact Phone Number:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+        <span id="name_validation" class="error_message"></span>
+    </div>
+  </section>
+  <section>
+    <p>Phone Number Type:</p>
+    <div>
+    <input type="radio" id="Landline" name="drone" value="Landline"
+            checked>
+    <label for="Landline">Landline</label>
+    </div>
+
+    <div>
+    <input type="radio" id="Mobile" name="drone" value="Mobile">
+    <label for="Mobile">Mobile</label>
+    </div>
+</section>
+&nbsp; 
+
+<section>
+  <div class="row">
+    <label class="required" for="email">Contact email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" maxlength="50" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+</section>
+&nbsp;
+<section>
+    <label for="hear">How did you hear about us?  </label>
+            <select class="contact-drop-down"  name="hear" id="hear">
+                <option>Click to choose</option>
+                <option value="1">Search Engine</option>
+                <option value="2">Social Media</option>
+                <option value="3">Recruiter</option>
+                <option value="5">Other</option>
+            </select>
+</section>
+&nbsp;
+<section>
+    <p> Interest for contacting: </p>
+        <input type="checkbox" id="interest1" name="interest1" value="">
+        <label for="interest1"> Knowledge of HTML, CSS, JavaScript </label><br>
+        <input type="checkbox" id="interest2" name="interest2" value="">
+        <label for="interest2"> Analytical Thinker </label><br>
+        <input type="checkbox" id="interest3" name="interest3" value="">
+        <label for="interest3"> Typing 65wpm </label><br>
+        <input type="checkbox" id="interest4" name="interest4" value="">
+        <label for="interest4"> Professional and concise communication </label><br><br>
+</section>
+
+<section>
+  <div class="row">
+    <label class="required" for="message">Message:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30" maxlength="250"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+  &nbsp;
+</section>
+    
+    <input type="submit" value="Submit">
+</form>
