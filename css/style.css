@@ -10,6 +10,7 @@ body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
 	color: #3a3a3a;
+	/* background-color:powderblue; */
 }
 
 p {
@@ -119,8 +120,8 @@ section ul li:before {
 }
 
 .banner {
-	color: #fff;
-	background: #3a49ce;
+	/* color: #fff; */
+	/* background: #3a49ce; */
 	padding: 1.5em 0;
 	margin-bottom: 60px;
 	position: relative;
