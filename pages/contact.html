@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/contact.css">
     <title>Contact Information</title>
+    <script src="contact.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,9 @@
                 <li>
                     <div id="resume">
                         <a href="../files/NickSatinoverResume.docx" download="Resume">
-                            <span title="Resume"><img id="resumeLink" src="../img/resume.png"/></span>
+                            <span title="Resume">
+                                <img id="resumeLink" src="../img/resume.png" />
+                            </span>
                         </a>
                     </div>
                 </li>
@@ -30,7 +33,9 @@
                 <li>
                     <div id="transcript">
                         <a href="../files/udOfficialTranscript.pdf" download="Transcript">
-                            <span title="UD Transcript"><img id="transLink" src="../img/transcript.jpg"/>
+                            <span title="UD Transcript">
+                                <img id="transLink" src="../img/transcript.jpg" />
+                            </span>
                         </a>
                     </div>
                 </li>
@@ -42,7 +47,7 @@
         </div>
     </header>
 
-    <form action="contact.html" method="POST">
+    <form id="contactForm" action="contact.html" method="POST" onsubmit="return checkForBlank()">
         <h2>Contact Me</h2>
 
         <fieldset>
@@ -125,10 +130,12 @@
         </fieldset>
 
         <button type="submit">Submit</button>
-        <!-- Older form -->
+        <br />
+        <button type="reset">Clear</button>
+
     </form>
 
-    
+
 
 </body>
 

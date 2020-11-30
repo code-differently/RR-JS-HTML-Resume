@@ -1,9 +1,16 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
+:root {
+    background: #e3effb;
+}
 
 * {
 	box-sizing: border-box;
+}
+
+a {
+	cursor: pointer;
 }
 
 body {
@@ -40,6 +47,10 @@ a {
 
 img {
 	max-width: 100%;
+}
+
+#headshot {
+	border-radius: 50%;
 }
 
 figure {
@@ -90,22 +101,33 @@ section ul li:before {
 	margin-top: 5px;
 }
 
-	.name a,
-	.main-nav a {
-		display: block;
-		text-align: center;
-		padding: 10px 15px;
-	}
-	
-	.main-nav a {
-		font-size: .95em;
-		color: #3a49ce;
-		text-transform: uppercase;
-	}
+.main-nav li {
+	border-radius: 5px;
+	background-color:powderblue;
+	margin: 5px;
+	padding: 10px;
+}
 
-	.main-nav a:hover {
-		color: #093a58;
-	}
+.name a,
+.main-nav a {
+	display: block;
+	text-align: center;
+	/* padding: 10px 15px; */
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3a49ce;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* .main-nav > li {
+	margin-left: 200px;
+} */
 
 /* ---- Layout Containers ---- */
 
@@ -132,6 +154,7 @@ section ul li:before {
 	padding-left: 1em;
 	border: solid 2px grey;
 	display: table-cell;
+	display: block;
 }
 
 .main-footer {
@@ -165,6 +188,11 @@ section ul li:before {
   left: -15px;
 }
 
+.center {
+	margin-left: auto;
+	margin-right: auto;
+  }
+
 header img {
     height: auto; 
     width: auto; 
@@ -184,8 +212,23 @@ header img {
 	margin-left: auto;
 	margin-right: auto;
 	width: 25%;
-	
 }
+
+img[src*="employerThumb"] {
+    width:  150px;
+    height: 75px;
+	object-fit: scale-down;
+	border: solid black 2px;
+	border-radius: 5%;
+	padding: 1em;
+	margin: .5em;
+}
+
+img[src*="employerThumb"]:hover {
+	border-color: #52bab3;
+}
+
+
 
 /* ================================= 
   Media Queries
@@ -217,9 +260,21 @@ header img {
 		float: left;
 	}
 
-	.primary,
+	.primary {
+		width: 40%;
+	}
+
+	.tertiary,
 	.secondary {
-		width: 50%;
+		width: 30%;
+	}
+
+	.col {
+		display: inline;
+		padding-right: 1em;
+		padding-left: 1em;
+		border: solid 2px grey;
+		display: table-cell;
 	}
 
 	.main-nav {
@@ -253,13 +308,6 @@ header img {
 		max-width: 1150px;
 	}
 
-	.primary {
-		width: 40%;
-	}
 
-	.secondary,
-	.tertiary {
-		width: 30%;
-	}
 
 }
