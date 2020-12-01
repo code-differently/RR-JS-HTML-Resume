@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contact</title>
+        
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        
+    </head>
+    <body>
+
+        <form action="index.html" method="post">
+      
+          <h1>Contact</h1>
+          
+          <fieldset>
+            
+            <legend><span class="number">1</span> your basic info</legend>
+          
+            <label for="first_name">first name:</label>
+            <input type="text" id="first_name" name="user_name">
+            <label for="last_name">last name:</label>
+            <input type="text" id="last_name" name="user_name">
+            <label for="email">email:</label>
+            <input type="email" id="email" name="user_email"><br>
+            <label for="contact_number">contact number:</label>
+            <input type="contact_number" id="contact_number" name="contact_number"><br>
+           
+            
+            
+            <input type="radio" id="mobile" name="phone">
+            <label for="mobile" class="light">mobile</label><br>
+            <input type="radio" id="house" name="phone">
+            <label for="house" class="light">house</label>
+            
+          </fieldset>
+          
+          <fieldset>
+            
+            <legend><span class="number">2</span> qualifications</legend>
+          
+            <label for="bio">About me:</label>
+            <textarea id="bio" name="user_bio"></textarea><br>
+            
+            <label for="job">how did you hear about us?:</label>
+            <select id="job" name="user_job">
+                
+                  <option value="search_engine">search enginge</option>
+                  <option value="social_media">social media</option>
+                  <option value="recruiter">recruiter</option>
+                  <option value="friend">friend</option>
+                  <option value="employee">employee</option>
+                
+            </select><br>
+            
+            <label>Interests for contacting: Skills</label><br>
+            <input type="checkbox" id="educated" value="interest_educated" name="user_skills"><label class="light" for="educated">Educated</label>
+            <input type="checkbox" id="experienced" value="interest_experienced" name="user_skills"><label class="light" for="experienced">Experienced</label>
+            <input type="checkbox" id="quick_learner" value="interest_quick_learner" name="user_skills"><label class="light" for="quick_learner">Quick Learner</label><br>
+            <input type="checkbox" id="fast_typer" value="interest_fast_typer" name="user_skills"><label class="light" for="fast_typer">Fast Typer</label>
+            <input type="checkbox" id="front_end_fluent" value="interest_front_end_fluent" name="user_skills"><label class="light" for="front_end_fluent">Front End Fluent</label>
+            <input type="checkbox" id="back_end_fluent" value="interest_back_end_fluent" name="user_skills"><label class="light" for="back_end_fluent">Back End Fluent</label>
+            
+            
+          </fieldset>
+          
+          <button type="submit">contact</button>
+          
+        </form>
+      
+      
+      
+    </body>
+</html>
