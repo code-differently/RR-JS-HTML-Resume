@@ -1,15 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnthonySmithResume</title>
+    <style>
+        <!--Navigation Styled
+        -->
+        body
+        {
+        margin:
+        0;
+        }
+        .nav
+        {
+        list-style-type:
+        none;
+        margin:
+        0;
+        padding:
+        0;
+        overflow:
+        hidden;
+        background-color:
+        rgb(0,
+        174,
+        255);
+        position:
+        fixed;
+        top:
+        0;
+        width:
+        100%;
+        }
+        li
+        {
+        float:
+        left;
+        }
+        li
+        a
+        {
+        display:
+        block;
+        color:
+        white;
+        text-align:
+        center;
+        padding:
+        14px
+        16px;
+        text-decoration:
+        none;
+        }
+        li
+        a:hover:not(.active)
+        {
+        background-color:
+        rgb(17,
+        17,
+        17);
+        }
+        .active
+        {
+        background-color:
+        #4CAF50;
+        }
+    </style>
 </head>
+
 <body>
+    <!-- Navigation -->
+    <ul class=nav>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
     <div class="intro" style="text-align: center;">
         <h1>Anthony Smith</h1>
         <a href="https://www.linkedin.com/in/anthonywsmithjr/">
-        <img src ="images/antpic.PNG"; style="height: 100px;">
+            <img src="images/antpic.PNG" ; style="height: 100px;">
         </a>
         <h3>Front-End Developer
             <a href="mailto:Antwsmith@protonmail.com"></a>
@@ -18,14 +89,15 @@
 
     <div class="objective">
         <h4>Objective</h4>
-        <p>Seeking employment as an Entry Front-End Developer to use experiences in designing software applications. 
-            I want to be in a challenging work environment that reward hard work and dedication. 
-            With my well honed skills from the IT industry I will be a great asset to your company.            
+        <p>
+            Seeking employment as an Entry Front-End Developer to use experiences in designing software applications.
+            I want to be in a challenging work environment that reward hard work and dedication.
+            With my well honed skills from the IT industry I will be a great asset to your company.
         </p>
     </div>
 
     <div class="workexp">
-        <h4>Work Experinces</h4>
+        <h4>Work Experiences</h4>
         <ul>
             <li>Server Support </li>
             <li>Verizon Wireless Sales Professional </li>
@@ -50,4 +122,5 @@
         <a href=contactform.html>Contact Form</a>
     </footer>
 </body>
+
 </html>
