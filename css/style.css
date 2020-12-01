@@ -1,0 +1,317 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+:root {
+    background: #e3effb;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	cursor: pointer;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	/* background-color:powderblue; */
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3,
+h4 {
+	margin-top: 0;
+}
+
+h4 {
+	margin-bottom: .4em;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+#headshot {
+	border-radius: 50%;
+}
+
+figure {
+	margin: 0;
+	line-height: 0;
+	position: relative;
+}
+
+figcaption {
+	font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+	padding: 1em;	
+	background: rgba(19,43,102, .85);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+section ul {
+	margin-bottom: 1em;
+}
+
+section ul li:before {
+	content: "•"; /* Insert content that looks like bullets */
+	padding-right: 8px;
+	color: black; /* Or a color you prefer */
+  }
+
+  #objList li:before {
+	content: "•"; /* Insert content that looks like bullets */
+	padding-right: 8px;
+	color: black; /* Or a color you prefer */
+  }
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.main-nav li {
+	border-radius: 5px;
+	background-color:powderblue;
+	margin: 5px;
+	padding: 10px;
+}
+
+.name a,
+.main-nav a {
+	display: block;
+	text-align: center;
+	/* padding: 10px 15px; */
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3a49ce;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* .main-nav > li {
+	margin-left: 200px;
+} */
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner,
+.main-footer {
+	text-align: center;
+}
+
+.banner {
+	/* color: #fff; */
+	/* background: #3a49ce; */
+	padding: 1.5em 0;
+	margin-bottom: 60px;
+	position: relative;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+	border: solid 2px grey;
+	display: table-cell;
+	display: block;
+}
+
+.main-footer {
+	padding: 2em 0;
+	margin-top: 30px;
+	text-align: center;
+	position: relative;
+    background: #3a49ce;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4);
+	width: 100%;
+	left: 0;
+    bottom: 0;
+	z-index: 999;
+	color: white;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+.headline {
+	margin-bottom: 0;
+}
+
+.icon-location {
+  width: 35px;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+header img {
+    height: auto; 
+    width: auto; 
+    max-width: 30px; 
+    max-height: 30px;
+}
+
+#headshot {
+	size: 200px;
+}
+
+#interest {
+	list-style: none;
+}
+
+#objective {
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+}
+
+img[src*="employerThumb"] {
+    width:  150px;
+    height: 75px;
+	object-fit: scale-down;
+	border-radius: 5%;
+	padding: 1em;
+	margin: .5em;
+	background-color: #52bab3;
+}
+
+img[src*="employerThumb"]:hover {
+	border: solid blue 2px;
+}
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (max-width: 575px){
+	#headshot {
+		display: none;
+	}
+}
+
+
+@media (min-width: 769px) {
+
+  body {
+    padding-top: 68px;
+  }
+
+  .main-header {
+    position: fixed;
+    background: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4);
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		display: table; /* Make the container element behave like a table */
+	}
+
+	.name
+	{
+		float: left;
+	}
+
+	.primary {
+		width: 40%;
+	}
+
+	.tertiary,
+	.secondary {
+		width: 30%;
+	}
+
+	.col {
+		display: inline;
+		padding-right: 1em;
+		padding-left: 1em;
+		border: solid 2px grey;
+		display: table-cell;
+	}
+
+	.main-nav {
+		float: right;
+		
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	.tagline {
+		font-size: 1.4em;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1025px) {
+	
+	.container {
+		width: 80%;
+		max-width: 1150px;
+	}
+
+}
