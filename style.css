@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: Pixelboy;
-  src: url(/fonts/Pixeboy-z8XGD.ttf);
+  src: url(/fonts/Pixeboy-z8XGD.ttf); /* Import Downloaded Fonts */
 }
 
 * {
@@ -33,7 +33,7 @@
 
 .logo,
 .nav {
-  list-style: none;
+  list-style: none; /* Remove Bullets From List */
   text-transform: uppercase; /* Makes Logo And Nav Capitalize */
 }
 
@@ -44,15 +44,14 @@
 .logo a,
 .nav a {
   text-decoration: none;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0.01rem; /* Not Much Spacing for 8Bit Effect */
 }
 
 .nav {
-  display: flex;
+  display: flex; /* Create Row Nav */
 }
 
 .nav a {
-  justify-content: flex-end;
   padding: 1.25em;
   color: white;
   font-family: EightBitDragon;
@@ -64,27 +63,31 @@
 }
 
 .nav a:hover {
-  background: #000000;
+  background: #000000; /* Need To Make Hover More Fun */
 }
 
 .intro {
-  justify-content: center;
+  justify-content: center; /* Flex Container Stays Centered On The*/
   align-items: center;
   font-weight: 350;
   background-color: #ffcb47;
-  display: flex;
+  display: flex; /* Shift Activities To The Right Of the Avatar */
   height: 400px;
 }
 
 .hobby {
   margin: 10;
+  text-decoration: none;
 }
 
-.hobby li {
+.hobby li,
+a:link {
+  /*Links Stay Black Without Any Format Changes */
   margin-bottom: 20px;
   letter-spacing: 0.01rem;
-  list-style-type: none;
-
+  text-decoration: none;
+  list-style-type: none; /* Remove The Bullets */
+  color: black;
   /*-----> Need to create class for each hobby list <----
 list-style: url(/images/Sword.png);  */
 }
@@ -92,10 +95,6 @@ list-style: url(/images/Sword.png);  */
 .avatar {
   height: 200px;
   margin: 3em 0 3em 0;
-}
-
-.activities {
-  flex-direction: row-reverse;
 }
 
 /* *********** media queries *********** */
@@ -110,7 +109,7 @@ list-style: url(/images/Sword.png);  */
 
   .nav {
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-around; /* Responsive Spacing For Smaller Devices */
   }
 }
 
@@ -121,7 +120,7 @@ list-style: url(/images/Sword.png);  */
   }
 
   .flex-nav {
-    flex-direction: column;
+    flex-direction: column; /* Collapse Navigation Links On Top Of Each Other */
     justify-content: center;
   }
 
@@ -133,10 +132,10 @@ list-style: url(/images/Sword.png);  */
   }
 
   .intro {
-    flex-direction: column;
+    flex-direction: column; /* Collapse Items Insides To Fit On Screen */
   }
 
   .avatar {
-    height: 100px;
+    height: 100px; /* Change The Height Of The Avatar To Fit on Screen */
   }
 }
