@@ -1,12 +1,14 @@
 @font-face {
   font-family: EightBitDragon;
-  src: url(/fonts/EightBitDragon-anqx.ttf);
+  src: url(/fonts/EightBitDragon-anqx.ttf); /* Import Downloaded Fonts */
 }
 @font-face {
   font-family: Pixelboy;
   src: url(/fonts/Pixeboy-z8XGD.ttf);
 }
+
 * {
+  /* Set All Non Selectors To 0 Padding & Margin */
   padding: 0;
   margin: 0;
 }
@@ -15,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #61a0af;
+  background: rgb(97, 160, 175);
   padding: 1em;
   height: 50px;
 }
@@ -24,6 +26,7 @@
   margin: 0 0 0 2em;
   font-family: Pixelboy;
 }
+
 .logo a {
   color: rgb(0, 0, 0);
 }
@@ -31,8 +34,9 @@
 .logo,
 .nav {
   list-style: none;
-  text-transform: uppercase;
+  text-transform: uppercase; /* Makes Logo And Nav Capitalize */
 }
+
 .avatar {
   width: 20rem;
 }
@@ -53,6 +57,7 @@
   color: white;
   font-family: EightBitDragon;
 }
+
 .professional {
   font-weight: 200;
   font-family: EightBitDragon;
@@ -61,6 +66,7 @@
 .nav a:hover {
   background: #000000;
 }
+
 .intro {
   justify-content: center;
   align-items: center;
@@ -69,25 +75,27 @@
   display: flex;
   height: 400px;
 }
+
 .hobby {
-  display: flex;
-  align-items: flex-end;
   margin: 10;
 }
+
 .hobby li {
   margin-bottom: 20px;
   letter-spacing: 0.01rem;
-  flex-direction: column;
   list-style-type: none;
-  /*
------> Need to create class for each hobby list <----
-list-style: url(/images/Sword.png);
-*/
-  list-style-position: none;
+
+  /*-----> Need to create class for each hobby list <----
+list-style: url(/images/Sword.png);  */
 }
-img {
+
+.avatar {
   height: 200px;
   margin: 3em 0 3em 0;
+}
+
+.activities {
+  flex-direction: row-reverse;
 }
 
 /* *********** media queries *********** */
@@ -110,21 +118,25 @@ img {
 @media all and (max-width: 600px) {
   .logo {
     margin: 0.25em 0;
-    align-self: left;
   }
 
-  .nav {
+  .flex-nav {
     flex-direction: column;
+    justify-content: center;
   }
 
   .nav a {
-    text-align: center;
+    justify-content: center;
     padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgb(97, 160, 175);
+    border-bottom: 1px solid rgb(97, 160, 175);
   }
 
-  .nav li:last-of-type a {
-    border-bottom: none;
+  .intro {
+    flex-direction: column;
+  }
+
+  .avatar {
+    height: 100px;
   }
 }
