@@ -1,3 +1,11 @@
+@font-face {
+  font-family: EightBitDragon;
+  src: url(/fonts/EightBitDragon-anqx.ttf);
+}
+@font-face {
+  font-family: Pixelboy;
+  src: url(/fonts/Pixeboy-z8XGD.ttf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -7,11 +15,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(48, 97, 172);
+  background: #61a0af;
+  padding: 1em;
+  height: 50px;
 }
 
 .logo {
-  margin: 0 0 0 0.45em;
+  margin: 0 0 0 2em;
+  font-family: Pixelboy;
 }
 .logo a {
   color: rgb(0, 0, 0);
@@ -22,11 +33,14 @@
   list-style: none;
   text-transform: uppercase;
 }
+.avatar {
+  width: 20rem;
+}
 
 .logo a,
 .nav a {
   text-decoration: none;
-  letter-spacing: 0.45rem;
+  letter-spacing: 0.01rem;
 }
 
 .nav {
@@ -34,21 +48,50 @@
 }
 
 .nav a {
-  display: block;
-  padding: 1em;
+  justify-content: flex-end;
+  padding: 1.25em;
   color: white;
+  font-family: EightBitDragon;
+}
+.professional {
+  font-weight: 200;
+  font-family: EightBitDragon;
 }
 
 .nav a:hover {
-  background: #00ace6;
+  background: #000000;
 }
-
+.intro {
+  justify-content: center;
+  align-items: center;
+  font-weight: 350;
+  background-color: #ffcb47;
+  display: flex;
+  height: 400px;
+}
+.hobby {
+  display: flex;
+  align-items: flex-end;
+  margin: 10;
+}
+.hobby li {
+  margin-bottom: 20px;
+  letter-spacing: 0.01rem;
+  flex-direction: column;
+  list-style-type: none;
+  /*
+-----> Need to create class for each hobby list <----
+list-style: url(/images/Sword.png);
+*/
+  list-style-position: none;
+}
 img {
-  height: 100px;
+  height: 200px;
+  margin: 3em 0 3em 0;
 }
 
 /* *********** media queries *********** */
-@media all and (max-width: 990px) {
+@media all and (max-width: 992px) {
   .flex-container {
     flex-direction: column;
   }
@@ -67,7 +110,7 @@ img {
 @media all and (max-width: 600px) {
   .logo {
     margin: 0.25em 0;
-    align-self: left; /* align the logo to the left side of 'flex-container' */
+    align-self: left;
   }
 
   .nav {
