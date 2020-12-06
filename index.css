@@ -1,0 +1,51 @@
+/* This is for CSS that only index.html uses. Global styles are in styles.css */
+
+img {
+  border-radius: 50%;
+  width: 12em;
+  float: right;
+
+  transition: 0.2s;
+}
+
+img:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.hover-transition {
+  border-left: 0px solid var(--secondary-text-color);
+  transition: 0.4s;
+}
+
+.hover-transition:hover {
+  background-color: #d88f53;
+  border-left: 6px solid var(--secondary-text-color);
+  padding-left: 10px;
+}
+
+.company {
+  font-weight: bold;
+}
+
+.position {
+  font-style: bold;
+  color: var(--secondary-text-color);
+}
+
+.date {
+  font-style: italic;
+  color: var(--secondary-text-color);
+}
+
+.main-text {
+  display: block;
+}
+
+@media (max-width: 1072px) {
+  img {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+}

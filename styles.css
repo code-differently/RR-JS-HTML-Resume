@@ -1,0 +1,83 @@
+/* This is for global styles that all pages use */
+
+body {
+  --primary-text-color: #222527;
+  --secondary-text-color: rgb(70, 70, 70);
+  --background-color: #f4a261;
+  --background-color-hover: #d88f53;
+  --border-color: var(--secondary-text-color);
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+
+  color: var(--primary-text-color);
+
+  background-color: #2a9d8f;
+}
+
+#navbar {
+  margin: -10px -10px 20px -10px; /* Negative so div goes to edge of screen */
+  padding: 35px 25%;
+  background-color: #222;
+
+  display: flex;
+  flex-direction: row;
+  color: green;
+  list-style: none;
+}
+
+#navbar a {
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 20px;
+
+  transition: 0.2s;
+}
+
+#navbar :nth-child(4) {
+  margin-left: auto;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: var(--background-color-hover);
+}
+
+a:hover {
+  color: yellow;
+  background-color: #18343f;
+  border-radius: 20px;
+}
+
+.main-content-wrapper {
+  margin: auto;
+  padding: 0 20px 20px;
+  width: 50%;
+  background-color: var(--background-color);
+  border-radius: 40px;
+  box-shadow: 13px 13px 0 #222;
+}
+
+.primary-text {
+  color: var(--primary-text-color);
+}
+
+.secondary-text {
+  color: var(--secondary-text-color);
+}
+
+.title {
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px 0px;
+  border-radius: 40px 40px 0 0;
+  border-bottom: 1px solid var(--border-color);
+
+  transition: 0.2s;
+}
+.title:hover {
+  background-color: var(--background-color-hover);
+}
