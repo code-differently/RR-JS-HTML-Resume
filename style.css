@@ -103,6 +103,11 @@ list-style: url(/images/Sword.png);  */
     flex-direction: column;
   }
 
+  a:link {
+    text-decoration: none;
+    list-style-type: none;
+  }
+
   .logo {
     margin: 0;
   }
@@ -122,6 +127,11 @@ list-style: url(/images/Sword.png);  */
   .flex-nav {
     flex-direction: column; /* Collapse Navigation Links On Top Of Each Other */
     justify-content: center;
+  }
+
+  a:link {
+    text-decoration: none;
+    list-style-type: none;
   }
 
   .nav a {
