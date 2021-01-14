@@ -1,105 +1,53 @@
-<!-- # Work Assignment - HTML Resume
-
-## Description
-You will create a resume page and contact form using HTML. After completing each bullet point in the requirements, you should commit and push your changes. To commit a change, you can follow the following steps:
-
-1. Add files to staging: `git add .`
-2. Commit staged files: `git commit -m '<some-information-message-here>'
-3. Push changes to GitHub `git push`
-
-## Setup
-1. Fork this repository
-2. Clone your repository to your local machine `git clone`
-3. Open the project in your text editor
-4. Create HTML pages in the root directory
-5. Create a folder named 'images' and add image files to this directory
-
-### Tech Stack
-A list of expected technology to be used in this assignment
-
-* HTML
-* Web Browser
- 
-## Requirements
-
-### Part 1
-
-Create a web page that displays your resume. The web page should consist of the following sections:
-
-* Name
-* Objective (3 sentence minimum)
-* Work Experience (no less than 2 previous/present jobs)
-* Education
-* Skills (3 skills minimum)
-* LinkedIn Profile Address
-* Profile Image
-* Any awards and/or certificates if applicable
-
-### Part 2
-
-Now is time create a 2nd page. This page will contain a contact form. The form should have the following fields:
-
-* First Name (text field, limit of 30 characters)
-* Last Name (text field, limit of 30 characters)
-* Contact phone number (text field)
-* Phone number type: Landline, Mobile (radio button)
-* Contact email (text field, limit of 50 characters)
-* How did you hear about us: Search Engine, Social Media, Recruiter (drop down)
-* Interest for contacting: A list of your skills (check box)
-* Message (text area, limit of 250 characters)
-* Use of labels with all form fields
-* Use of validation
-
-### Submission
-Create a pull request from your project GitHub page
-
-**Happy Hacking!**
-
- -->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Stephanie Czetli's Resume</title>
+        <title>Stephanie Czetli Resume</title>
         <link rel="stylesheet" href="/css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/0daaf82d24.js" crossorigin="anonymous"></script>
+        <style>
+            a:link { text-decoration: none }
+            a:hover { text-decoration: underline}
+            th { padding: 0 20px 3px 0; }
+            tr { text-align: left; }
+            
+        </style>
+
     </head>
     <body>
         <div class="wrapper-body">
             <header>
                 <section class="profile-photo">
-                    <h3>Profile Image</h3>
+                    <img src="/images/profile-img.jpg" alt="profile photo of Stephanie"></img>
 
                 </section>
 
                 <section class="name">
-                    <h1><strong>Stephanie Czetli, Front-End Web Developer</strong></h1>                                   
+                    <h1><strong>STEPHANIE CZETLI, Front End Web Developer</strong></h1>                                   
                 </section>
             
                 <section>
                     <nav>
-                        <ul style="list-style-type: none;">
-                            <!-- <li><a href="#">Home</a></li> -->
-                            <!-- <li><a href="#">About</a></li> -->
-                            <li><a class="active" href="resume.html">Experience</a></li>
-                            <!-- <li><a href="#">Skills</a></li> -->
-                            <li><a href="contact.html">Contact Me</a></li>
-                        </ul>
-
+                    <ul style="list-style-type: none;">
+                        <!-- <li><a href="#">Home</a></li> -->
+                        <!-- <li><a href="#">About</a></li> -->
+                        <li><a class="active" href="resume.html">Experience</a></li>
+                        <!-- <li><a href="#">Skills</a></li> -->
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
                     </nav>
                 </section>
 
                 <section class="wrapper">
-                    <h2 class="social-media">Let's Connect</h2>
-                    <div class="media-icons">
-                        <ul style="list-style-type: none;">
-                            <li><a href="https://www.linkedin.com/in/stephanieczetli/"  target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href="https://github.com/StephanieCzetli"  target="_blank"><i class="fab fa-github"></i></a></li>
-                            <li><a href="https://codepen.io/stephanie_czetli"  target="_blank"><i class="fab fa-codepen"></i></a></li>
-                        </ul>
+                <h2 class="social">Let's Connect</h2>
+                    <div class="icons">
+                    <ul style="list-style-type: none;">
+                        <li><a href="https://www.linkedin.com/in/stephanieczetli/"  target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/StephanieCzetli"  target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://codepen.io/stephanie_czetli"  target="_blank"><i class="fab fa-codepen"></i></a></li>
+                    </ul>
 
                     </div>
                 </section>
@@ -107,117 +55,119 @@ Create a pull request from your project GitHub page
         
             <main>
                 <section class="objective">
-                    <h3>Objective</h3>
-                    <p>Quality focused professional with a Bachelor or Arts degree and 10+ years combined experience in financial, education, manufacturing and real estate.  An organized and efficient strategic partner who anticipates needs, plans for the unexpected, identifies and improves processes and facilitates communication.  I make it possible for you to achieve more.</p>
-
+                    <h3>OBJECTIVE</h3>
+                    <p>Highly motivated trilingual front end web developer with strong project management skills,
+                    a solid foundation in writing and structuring clear semantic markup and a keen interest in
+                    responsive design, accessibility and UX/UI design. A detail oriented, strategic team member
+                    who is passionate about technology and eager to share, apply and broaden new and existing
+                    skills as part of an Agile development team.</p>
                 </section>
 
                 <section class="skills">
-                    <div class="col-skills">
-                    <h3>Skills</h3>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Contact Tracing</td>
-                                    <td>Confidentiality</td>
-                                    <td>Critical Thinking</td>
-                                </tr>
-                                <tr>
-                                    <td>Data Collection</td>
-                                    <td>Communication</td>
-                                    <td>Lead Generation</td>
-                                <tr>
-                                    <td>Customer Service</td>
-                                    <td>Thoroughness</td>
-                                    <td>Organization</td>
-                                </tr>
-                                <tr>
-                                    <td>Process Improvement</td>
-                                    <td>Accuracy</td>
-                                    <td>Project Management</td>
-                                </tr>
-                                <tr>
-                                    <td>Account Management</td>
-                                    <td>Strategic Marketing</td>
-                                    <td>Sales Process Planning</td>
-                                </tr>
-                                <tr>
-                                    <td>Product | Operations Planning</td>
-                                    <td>Time Management</td>
-                                    <td>Team Building</td>
-                                </tr>
-                                <tr>
-                                    <td>Report Creation</td>
-                                    <td>Inside Sales</td>
-                                    <td>Sales Growth</td>
-                                </tr>
-                            </tbody>  
-                        </table>
-                    </div>
+                <div class="col-skills">
+                    
+                <h3>SKILLS</h3>
+                    <table>
+                    <tbody>
+                        <!-- Table Header Row 1 -->
+                        <tr>
+                            <th>Languages</th>
+                            <th>Frameworks</th>
+                            <th>Technologies</th>
+                        </tr>
+                        <!-- Row 2 Table Data -->
+                        <tr>
+                            <td>HTML</td>
+                            <td>Bootstrap</td>
+                            <td>Version Control (Git)</td>
+                        </tr>
+                        <!-- Row 3 Table Data -->
+                        <tr>
+                            <td>CSS</td>
+                            <td>jQuery</td>
+                            <td>Visual Studio Code</td>
+                        </tr>
+                        <!-- Row 4 Table Data -->
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Accuracy</td>
+                        </tr>
+                        
+                    </tbody>  
+                    </table>
+                </div>
                 </section>
 
                 <section class="work-experience">
-                    <h3>Work Experience</h3>
-                    <h4>Administrative Coordinator</h4>
-                        <p><a href="https://www.pattersonschwartz.com/" target="_blank">Patterson-Schwartz Real Estate Team</a>, Wilmington, DE     (Jul 2017 - Feb 2020)</p>
-                        <p>Managed all aspects of residential real estate business including maintaining records and documentation for all transactions as per state and national requirements.  Reduced search time and increased client satisfaction by conducting needs assessments that established guidelines and refined search results.  Determined competitive pricing analyses by monitoring, researching and analyzing current market conditions and comparing properties.  Reviewed and drafted contracts and disclosures to ensure legal and contractual compliance of transactions.  Submitted necessary documentation to the office broker for file compliance.</p>
-                    <h4>Highlights:</h4>
-                        <ul style="list-style-type:square;">
-                            <li>Reduced risk and increased productivity by developing and writing a standard operating procedures (SOP) manual</li>
-                            <li>Developed comprehensive spreadsheets to identify trends and monitor and track both agent and team metrics</li>
-                            <li>Encouraged use of cloud based products to improve communication and trained agents on mobile and desktop devices (iOS and Android)</li>
-                        </ul>
-                    <h4>Senior Administrative Assistant</h4>
-                        <p><a href="https://www.octorara.k12.pa.us/domain/44" target="_blank">Octorara Jr.-Sr. High School</a>, Atglen, PA     (Apr 2014 - Jul 2015)</p>
-                        <p>Ensured efficient and orderly front office operations by overseeing office staff and providing administrative support for the principal of two buildings.  Acted as liaison between the school and the public conveying policy and procedure information.  Compiled, coordinated and disseminated all information including handbooks for faculty and students for the opening and close of school.  Tracked and recorded staff attendance, annual reviews, and continuing education requirements for teachers to ensure compliance with school policy and state requirements.  Verified student data (grades, attendance, discipline) met state compliance requirements and researched missing data.  Managed and balanced a budget of $225,000.</p>
-                    <h4>Highlights:</h4>
-                        <ul style="list-style-type:square;">
-                            <li>Reduced supply costs and improved efficiency by converting purchase order filing system to an electronic format</li>
-                            <li>Improved communication building-wide by publishing a shared electronic calendar that became the primary source for reliable information and materials for meetings and events</li>
-                            <li>Made it easy for staff and teachers to adapt to an electronic calendar by providing in-person training and by developing and writing quick reference training materials</li>  
-                            <li>Ensured uniform and timely distribution of daily announcements by converting announcements to an electronic format that was quick and easy-to-read (increased readership by demonstrating value = quick & easy to read)</li>
-                        </ul>
-                    <h4>Licensed Realtor<small class="registered">&#174</small></h4>
-                        <p><a href="https://www.hostetterrealty.com/" target="_blank"">Hostetter Realty</a>, Gap, PA     (Mar 2004 - Jan 2010)</p>
-                        <p>Managed all aspects of residential real estate business including maintaining records and documentation for all transactions as per state and national requirements.  Reduced search time and increased client satisfaction by conducting needs assessments that established guidelines and refined search results.  Determined competitive pricing analyses by monitoring, researching and analyzing current market conditions and comparing properties.  Reviewed and drafted contracts and disclosures to ensure legal and contractual compliance of transactions.  Submitted necessary documentation to the office broker for file compliance.</p>
-                    <h4>Highlights:</h4>
-                        <ul style="list-style-type:square;">
-                            <li>Earned “Accredited Buyer Representative (ABR)” designation by meeting education requirements and sales quotas</li>
-                            <li>Earned “e-Pro<small class="registered">&#174</small> Technology (e-Pro<small class="registered">&#174</small>)” certificate by meeting education requirements and sales quotas</li>
-                        </ul>
-                    <h4>Inside Sales Coordinator</h4>
-                        <p><a href="https://www.cdsanalytical.com/" target="_blank">CDS Analytical Inc.</a>, Oxford, PA     (Nov 2001 - Aug 2003)</p>
-                        <p>An integral part of a small sales team.  Worked directly with the Director of Sales and Marketing.  Hired to increase sales through development of business relationships with existing customer base and manufacturer representatives, and to improve cross departmental communication.  Cross departmental collaboration resulted in strong product line knowledge, recommendations for cutting edge product usage across industries, and development of trust between teams and departments.  Drove sales by conducting needs assessments, listening for customers’ pain points, and recommending innovative ways to utilize products.</p>
-                    <h4>Highlights:</h4>
-                        <ul style="list-style-type:square;">
-                            <li>Increased sales by $5,000 within 2 weeks, reduced volume of returns, and improved brand confidence + customer satisfaction by creating and distributing an easy to reference, accurate list of parts and consumables</li>
-                            <li>Made product lines easier to sell (and learn) and increased accuracy of quotes by developing a product reference that outlined each product, possible configurations by application, and product specific parts and consumables</li>
-                            <li>Made it easy for customers to do business with the company by developing and implementing sales processes that established routine methods for consistently providing an excellent customer experience for customers.</li>
-                            <li>Improved data quality in customer database by methodically and routinely contacting customers</li>
-                        </ul>
+                <hr>
+                <h3>EXPERIENCE</h3>
+                <h4><a href="https://codedifferently.com/" target="_blank">Code Differently</a>, Wilmington, DE  -  <i>Student Web Design & Development</i></h4>
+                    <p>Nov 2020 - PRESENT</p>
+                    <ul style="list-style-type:square;">
+                        <li>Selected from over 200 applicants for admission in a class of 32 students</li>
+                        <li>Worked 80+ hours per week to strengthen technical skills and gain experience in HTML,
+                        CSS, JavaScript, jQuery, Bootstrap</li>
+                        <li>Wireframed mockups and wrote and debugged code using semantic HTML5, CSS3,
+                        JavaScript, jQuery, Bootstrap and Chrome DevTools. Pushed completed projects to GitHub
+                        repository using Git, Git Bash and the Command Line Interface</li>
+                        <li>Completed over 400 hours of online tutorials, software development projects and training
+                        in an immersive program</li>
+                    </ul>
+
+                <h4><a href="https://www.pattersonschwartz.com/" target="_blank">Patterson-Schwartz Real Estate Team</a>, Wilmington, DE  -  <i>Administrative Coordinator</i></h4>
+                    <p>Jul 2017 - Feb 2020</p>
+                    <ul style="list-style-type:square;">
+                        <li>Promoted and supported the use of cloud based products to improve communication and trained agents on mobile (iOS and Android) and desktop devices</li>
+                        <li>Reduced risk and increased productivity by developing and writing a standard operating procedures (SOP) manual</li>
+                        <li>Developed comprehensive spreadsheets to identify trends and monitor and track both agent and team metrics</li>
+                    </ul>
+                    
+                <h4><a href="https://www.octorara.k12.pa.us/domain/44" target="_blank">Octorara Jr.-Sr. High School</a>, Atglen, PA  -  <i>Senior Administrative Assistant</i></h4>
+                    <p>Apr 2014 - Jul 2015</p>
+                    <ul style="list-style-type:square;">
+                        <li>Transformed communication building-wide by publishing a shared electronic calendar that became the centralized source for reliable information and materials for meetings and events</li>
+                        <li>Dramatically reduced distribution time by converting daily announcements to an electronic format containing timely and accurate content which increased demand for the publication</li>
+                    </ul>
+                </section>
+<hr>
+                <section class="certs">
+                    <h3>CERTIFICATES</h3>
+                    <ul style="list-style-type:square;">
+                        <li>Web Design & Development | Code Differently (Exp. Mar 2021)</li><br>
+
+                        <li>Introduction to HTML5 (Feb 2020)</li>
+                        <li>Introduction to CSS3 (Aug 2020)</li>
+                        <li>Interactivity with JavaScript (Sept 2020)</li>
+                        <li>Advanced Styling and Responsive Design (Oct 2020)</li>
+                        <li style="list-style-type:none;">University of Michigan, Coursera</li>
+                        <br>
+                        <li>JavaScript | Codecademy.com (2016)</li>
+                        <br>
+                        <li>Try Python Level 2 | CodeSchool.com (2016-2017)</li>
+                        <br>
+                        <li>Licensed Pennsylvania Real Estate Salesperson (PA Lic# RS280597) (2004-2010)</li>
+                        <li>Accredited Buyer Representative (ABR) designation | Pennsylvania Realtors<small
+                                class="registered">&#174</small> Institute (2007)</li>
+                        <li>e-Pro<small class="registered">&#174</small> Technology (e-Pro<small class="registered">&#174</small>)
+                            designation | National Association of Realtors<small class="registered">&#174</small> (2007)</li>
+                    </ul>
+
                 </section>
 
-                <section class="education">
-                    <h3>Education</h3>
-                    <p>Bachelor of Arts, International Relations | <a href="https://marybaldwin.edu/" target="_blank">Mary Baldwin University</a></p>
+                <section class="ed">
+                <h3>EDUCATION</h3>
+                    <p><a href="https://marybaldwin.edu/" target="_blank">MARY BALDWIN UNIVERSITY</a><br>
+                    B.A., International Relations<br>
+                    Minor: Asian Studies<br>
+                    Emphasis: Japanese</p>
+
+                    <p><a href="https://www.coursera.org/specializations/web-design#courses" target="_blank">UNIVERSITY OF MICHIGAN, COURSERA</a><br>
+                    Feb 2020 - PRESENT<br>
+                    Specialization: Web Design for Everybody: Basics of Web Development and Coding<br>
+                    </p>
                 
                 </section>
 
-                <section class="certificates">
-                    <h3>Certificates - Licenses</h3>
-                    <ul style="list-style-type:square;">
-                        <li>Web Design For Everybody - Capstone Project by the University of Michigan | Coursera (<i>in progress</i>)</li>
-                        <li>Advanced Styling and Responsive Design by the University of Michigan | Coursera (Oct 2020)</li>
-                        <li>Interactivity with JavaScript by the University of Michigan | Coursera (Sept 2020)</li>
-                        <li>Introduction to CSS3 by the University of Michigan | Coursera (Aug 2020)</li>
-                        <li>Introduction to HTML5 by the University of Michigan | Coursera (Feb 2020)</li>
-                        <li>COVID-19 Contact Tracing by Johns Hopkins University | Coursera (June 2020)</li>
-                        <li>Licensed Pennsylvania Real Estate Salesperson (PA Lic# RS280597) (Exp. Jan 2010)</li>
-                        <li>Accredited Buyer Representative (ABR) designation | Pennsylvania Realtors<small class="registered">&#174</small> Institute (2007)</li>
-                        <li>e-Pro<small class="registered">&#174</small> Technology (e-Pro<small class="registered">&#174</small>) designation | National Association of Realtors<small class="registered">&#174</small> (2007)</li>
-                    </ul>
-                </section>
-        
             </main>
         
             <footer>
