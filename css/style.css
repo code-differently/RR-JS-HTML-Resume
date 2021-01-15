@@ -1,13 +1,47 @@
+/* style for both resume & contact form */
+
 body {
    font-family: 'Poppins', sans-serif;
 }
 
+
+/* resume styles */
+/* styles all h3 headers to uppercase letters */
+h3 {
+   text-transform: uppercase;
+}
+
+h2:hover {
+   color: darkturquoise;
+   font-size: 1.5rem;
+}
+
+/* styles the registered mark after the word 'Realtor' */
 #registered {
    vertical-align:super;
 }
+
+li a {
+   float: left;
+   padding-right: 15px;
+} 
+
+/* contact form styles */
  
 .contact-info-block {
-   padding-bottom:1.2rem;
+   padding-bottom: 1.2rem;
 }
+
+/* style form headers */
+.form-header {
+   font-weight: bold;
+}
+
+/* gives focus to text input area of input fields */
+input:focus, textarea:focus{
+      background-color: lightyellow;
+}
+
+
 
 
