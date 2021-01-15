@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <style>
+            a:link { text-decoration: none }
+            a:hover { text-decoration: underline }
+        </style>
+    </head>
+
+    <body onload='document.formBasic.name.focus()'>
+        
+        <div class="wrapper-body">
+            <header>
+                <h1>Contact Form</h1>
+            </header>
+
+            <main>
+                <form name="formBasic" action="contact.html" method="post">
+                    <h4>Introduce yourself below and let's connect!</h4>
+                    <fieldset class="contact-info-block">
+                    <legend class="form-header"><span>Your Basic Contact Info</span></legend>
+                    <!-- First Name (text field, limit of 30 characters) -->
+                        <label for="firstName">First Name:</label>
+                        <input id="firstName" type="text" name="name" maxlength="30">
+                        
+                        <!-- Last Name (text field, limit of 30 characters) -->
+                        <label for="lastName">Last Name:</label>
+                        <input id="lastName" type="text" name="name" maxlength="30"> 
+                        <br>
+                        <!-- Contact phone number (text field) -->
+                        <label for="primaryPhone">Primary Phone No.:</label>
+                        <input id="primaryPhone" type="text" name="phone">
+                        
+                        <!-- Phone number type: Landline, Mobile (radio button) -->
+                        <label for="landline">Landline:</label>
+                        <input id="landline-radio" type="radio" name="primaryType">
+                        
+                        <label>Mobile:</label>
+                        <input id="altPhone-radio" type="radio" name="primaryType">
+                        <br>
+                        
+                        <label>Alt. Phone No.:</label>
+                        <input type="text" id="altPhone" name="altType">
+                        
+                        <!-- Phone number type: Landline, Mobile (radio button) -->
+                        <label>Landline:</label>
+                        <input type="radio" id="phoneType-mobile" name="altType">
+                        <label>Mobile:</label>
+                        <input type="radio" id="phoneType-landline" name="altType">
+                        <br>
+                        
+                        <!-- Contact email (text field, limit of 50 characters) -->
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="user_email" maxlength="50">    
+                    </fieldset>
+                    <br>
+
+                    <fieldset class="additional-info-block">
+                    <legend class="form-header"><span>Additional Info</span></legend>
+                    <!-- * How did you hear about us: Search Engine, Social Media, Recruiter (drop down) -->
+                    <label for="source">How did you hear about me?</label>
+                        <select id="source" name:"source">
+                            <option value="Select an Option">Select an Option Below</option>
+                            <option value="Search Engine">Search Engine</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Recruiter">Recruiter</option>
+                            <option value="other">other</option>
+                        </select>
+                    <br>
+                    <br>
+
+                    <!-- * Interest for contacting: A list of your skills (check box) -->
+                    <label>Which of my skills interested you?</label><br>
+                    <input type="checkbox" id="html" value="interest_html" name="user_interest"> <label class="light" for="html">HTML</label><br>
+                    <input type="checkbox" id="css" value="interest_css" name="user_interest"> <label class="light" for="css">CSS</label><br>
+                    <input type="checkbox" id="JavaScript" value="interest_javascript" name="user_interest"> <label class="light" for="javascript">JavaScript</label><br>
+                    <!-- * Message (text area, limited to 250 characters) -->
+                    <br>
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea id="message" name="user_bio" maxlength="250"></textarea>
+                    <br>
+                    <br>
+                    <!-- Form Submit button -->
+                    <!-- <button type="submit">Send</button> -->
+                    <input type="submit" name="submit" value="Submit" onclick="checkLetters(document.formBasic.name)"></input>
+
+                </form>
+                <br>
+                <br>
+            </main>
+            
+            <footer>
+                <nav>
+                    <ul style="list-style-type: none;">
+                        <li><a href="resume.html">Return to Resume</a></li>
+                        <li><a class="active" href="contact.html">Contact Form</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+
+    <script src="js/validation.js"></script>
+    </body>
+</html>

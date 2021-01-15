@@ -27,7 +27,7 @@ A list of expected technology to be used in this assignment
 Create a web page that displays your resume. The web page should consist of the following sections:
 
 * Name
-* Objective (3 sentence minimun)
+* Objective (3 sentence minimum)
 * Work Experience (no less than 2 previous/present jobs)
 * Education
 * Skills (3 skills minimum)
@@ -37,7 +37,7 @@ Create a web page that displays your resume. The web page should consist of the 
 
 ### Part 2
 
-Now is time create a 2nd page. This page will contain a contact form. The form should have the following fields:
+Create a 2nd page that contains a contact form. The form should have the following fields:
 
 * First Name (text field, limit of 30 characters)
 * Last Name (text field, limit of 30 characters)
@@ -50,7 +50,7 @@ Now is time create a 2nd page. This page will contain a contact form. The form s
 * Use of labels with all form fields
 * Use of validation
 
-### Submission
+### Submission YOur Project
 Create a pull request from your project GitHub page
 
 **Happy Hacking!**
